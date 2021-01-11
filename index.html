@@ -101,11 +101,11 @@
                </div>
                 <div class="flymarco">
                 <img src="img/p_home/hero_marco.png" class="marco">
-                <img src="img/p_home/hero_airplane.png" alt="" class="airplane1">
-                <img src="img/p_home/hero_airplane2.png" alt="" class="airplane2">
-                <img src="img/deco/start_yellow.png" alt="" class="star_yellow">
-                <img src="img/deco/start_white.png" alt="" class="star_white">
-                <img src="img/deco/planet.png" alt="" class="planet">
+                <img src="img/p_home/hero_airplane.png" class="airplane1">
+                <img src="img/p_home/hero_airplane2.png" class="airplane2">
+                <img src="img/deco/start_yellow.png" class="star_yellow">
+                <img src="img/deco/start_white.png" class="star_white">
+                <img src="img/deco/planet.png" class="planet">
                 </div>
            </div>
    </section>
@@ -113,14 +113,14 @@
    	<!-- 三顆大按鈕-->
    <section class="mainNav">
         <div class="mainNav__list">
-            <a href="#" class="mainNav__list_btn  b-info">
+            <a href="business.html" class="mainNav__list_btn  b-info">
                 <img src="img/p_home/mainNav_icon1.svg" alt="餐廳夥伴">
                 <div>
                 <h3 class="h3">我是餐廳夥伴</h3>
                 <h5 class="h5">了解0預付行銷</h5>
                 </div>
             </a>
-            <a href="#" class="mainNav__list_btn  b-primary">
+            <a href="foodie.html" class="mainNav__list_btn  b-primary">
                 <img src="img/p_home/mainNav_icon2.svg" alt="分享家">
                 <div>
                 <h3 class="h3">我是分享家</h3>
@@ -148,16 +148,16 @@
        <div class="service mt-5">
            <!-- 電腦版Swiper -->
             <ul class="servier__listPc disNone-table">
-                <li class="service__listPc_card mb-5 service__listPc_card--active">
-                    <h3 class="h3 t-strong pb-2">人人都是分享家</h3>
+                <li class="service__listPc_card mb-5 cursor-pointer service__listPc_card--active" data-service="1">
+                    <h3 class="h3 t-strong pb-2 transition-fast">人人都是分享家</h3>
                     <h4 class="h4 t-muted">全新認可機制，<br>讓你的用餐感動得到真實回饋。</h4>
                 </li>
-                <li class="service__listPc_card mb-5">
-                    <h3 class="h3 t-strong pb-2">精準用餐分類系統</h3>
+                <li class="service__listPc_card mb-5 cursor-pointer" data-service="2">
+                    <h3 class="h3 t-strong pb-2 transition-fast">精準用餐分類系統</h3>
                     <h4 class="h4 t-muted">無論獨食、聚餐、節日慶祝都能找到靈感。</h4>
                 </li>
-                <li class="service__listPc_card">
-                    <h3 class="h3 t-strong pb-2">這頓Food Marco買單</h3>
+                <li class="service__listPc_card cursor-pointer" data-service="3">
+                    <h3 class="h3 t-strong pb-2 transition-fast">這頓Food Marco買單</h3>
                     <h4 class="h4 t-muted">用Food Marco付款，<br>即有機會抽到這餐免費。</h4>
                 </li>
             </ul>
@@ -176,12 +176,11 @@
                     <h3 class="h3 mb-3 t-strong">這頓Food Marco買單</h3>
                     <h5 class="h5">用Food Marco付款，即有機會抽這餐免費。</h5>
                 </li>
-
             </ul>
             </div>
     
             <div class="service__phone">
-                <img src="img/p_home/service_1.png" alt="精彩服務">
+                <img src="img/p_home/service_1.png" alt="精彩服務" id="home-service-phone">
             </div>
        </div>
     </div>
@@ -223,7 +222,7 @@
                 <h4 class="h4 mt-2">開始使用Food Marco，最可靠的美食經驗分享平台</h4>
             </div>
             <div class="action__download">
-                <div class="btn-lg b-primary p-relative my-2"><a href="foodmarco.com" class="t-black t-strong" target="_blank">立即體驗</a></div>
+                <div class="btn-lg-primary p-relative my-2"><a href="foodmarco.com" class="t-strong" target="_blank">立即體驗</a></div>
                 <div class="action__download_row">
                     <a href="#" class="action__download_row--apple" target="_blank"><img src="img/footer/GooglePlayBadge.png" alt="GooglePlay下載"></a>
                     <a href="#" class="action__download_row--google" target="_blank"><img src="img/footer/AppleStoreBadge.png" alt="MacAppStore"></a>    

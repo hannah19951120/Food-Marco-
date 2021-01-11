@@ -288,6 +288,7 @@
 		&_card{
 			padding-left: 15px;
 			border-left: 4px solid rgba($primary,0);
+			@include transition-fast();
 			&--active{
 				h3{
 					color: $primary;

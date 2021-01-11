@@ -116,16 +116,32 @@ img{
 			display: none;
 		}
 		a{
+			position: relative;
 			display: block;
-			padding: 5px 20px;
+			margin: 5px 18px;
+			padding: 2px 5px;
 			color: $black;
 			font-weight: $t-bold;
+			overflow: hidden;
 			&:last-child{
-				padding-right: 0;
+				margin-right: 0;
 			}
-		}
-		&__nav--active{
-			display: flex;
+			&:after{
+				content:'';
+				position: absolute;
+				display: block;
+				left: -100%;
+				top: 0;
+				@include size(100%);
+				z-index: -1;
+				background-color: $primary;
+				@include transition-middle();
+			}
+			&:hover{
+				&:after{
+					left: 0;
+				}
+			}
 		}
 	}
 	// 手機版本選單
@@ -133,12 +149,14 @@ img{
 		&__nav{
 			position: absolute;
 			@include df_center(column);
-			display: none;
+			display: flex;
 			align-items: flex-start;
 			width: 100%;
 			top: 0;
+			right: -100%;
 			padding: 55px 36px 80px 36px;
 			background-color: $primary;
+			@include transition-middle;
 			li{
 				width: 100%;
 				border-bottom:1px solid #fff;
@@ -150,8 +168,8 @@ img{
 				color: $white;
 				padding: 20px 10px;
 			}
-			&__nav--active{
-				display: flex;
+			&--active{
+				right: 0;
 			}
 		}
 	}

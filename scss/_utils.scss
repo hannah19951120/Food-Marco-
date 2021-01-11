@@ -237,6 +237,15 @@
 
 
 /*------------------------------------*\
+ $TRANSTION
+\*------------------------------------*/
+.transition-fast{@include transition-fast()};
+.transition-middle{@include transition-middle()};
+.transition-slow{@include transition-slow()};
+
+
+
+/*------------------------------------*\
  $POSITION
 \*------------------------------------*/
 .p-static{position: static;}

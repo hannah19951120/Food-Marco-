@@ -62,3 +62,13 @@ $t-strong: 700;
 
 
 
+
+/*------------------------------------*\
+ $TRANSITION
+\*------------------------------------*/
+$easeInOutSine: cubic-bezier(0.37, 0, 0.63, 1);
+$easeOutCubic: cubic-bezier(0.33, 1, 0.68, 1);
+$easeOutQuad: cubic-bezier(0.5, 1, 0.89, 1);
+$easeOutQuart: cubic-bezier(0.25, 1, 0.5, 1);
+$easeInOutCirc: cubic-bezier(0.85, 0, 0.15, 1);
+

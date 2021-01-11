@@ -195,15 +195,29 @@
 }
 
 
-.btn-lg{
+.btn-lg-primary{
 	padding: 28px 130px;
 	font-size: 1.6rem;
 	text-align: center;
 	letter-spacing: 0.4px;
+	border: 3px solid rgba($primary,0);
 	border-radius: 48px;
+	background-color: $primary;
+	@include transition-fast();
+	a{
+		color: $black;
+		@include transition-fast();
+	}
 	@include rwd($w-mb){
 		width: 90px;
 		padding: 28px 0;
+	}
+	&:hover{
+		background-color: $white;
+		border: 3px solid $primary;
+		a{
+			color: $primary;
+		}
 	}
 }
 
