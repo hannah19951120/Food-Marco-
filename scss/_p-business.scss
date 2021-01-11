@@ -1,0 +1,54 @@
+/* 
+	2020.12.30
+	business _ 店家專區
+*/
+.businessHero{
+	width: 100%;
+	margin-top: 20px;
+	padding: 80px 5px 154px 0;
+	@include bgimg('../img/p_business/hero.jpg');
+	@include rwd($w-table){
+		background-position: 0 0;
+	}
+	&__block{
+		@include rwd($w-table){
+			margin-top: 30px;
+		}
+		@include rwd(333px){
+			.displayH1{
+				font-size: 2.3rem;
+			}
+		}
+	}
+}
+
+/*   businessCard開始   */
+
+.businessCard{
+	.wrap{
+		@include df_center();
+		justify-content: space-between;
+		@include rwd($w-mb){
+			justify-content: center;
+		}
+	}
+}
+
+/*   howDoWorks開始   */
+
+.howDoWorks{
+	&__row{
+		@include df_center();
+		justify-content: space-between;
+		align-items: flex-start;
+		&_content{
+			width: 30%;
+		}
+		@include rwd($w-mb){
+			justify-content: center;
+			&_content{
+				width: 80%;
+			}
+		}
+	}
+}
