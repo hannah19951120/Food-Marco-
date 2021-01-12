@@ -2414,6 +2414,11 @@ img {
 }
 
 /*   Action開始   */
+.servier__listMb {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 .servier__listMb .swiper-pagination-bullet {
   border: 1px solid #1da1f2;
 }

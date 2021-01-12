@@ -1,4 +1,6 @@
 .servier__listMb{
+    width: 100vw;
+    overflow-x: hidden;
     .swiper-pagination-bullet{border: 1px solid #1da1f2;}.swiper-pagination-bullet-active{background:#1da1f2}
     img:not([draggable]), embed, object, video {
         max-width: 100%;
