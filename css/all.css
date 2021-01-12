@@ -2235,10 +2235,6 @@ img {
   color: #000;
 }
 
-.service__listMb {
-  width: 100%;
-}
-
 .service__listMb_card {
   display: -ms-flexbox;
   display: flex;
@@ -2415,7 +2411,8 @@ img {
 
 /*   Action開始   */
 .servier__listMb {
-  overflow-x: hidden;
+  width: 100vw;
+  overflow-x: hidden !important;
 }
 
 .servier__listMb .swiper-pagination-bullet {
