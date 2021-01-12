@@ -305,7 +305,6 @@
 		&_card{
 			@include df_center(column);
 			align-items: flex-start;
-			padding: 20px;
 			background-color: #fff;
 			color: $secondary-primary;
 			border: 2px solid $primary;

@@ -209,7 +209,7 @@
 		@include transition-fast();
 	}
 	@include rwd($w-mb){
-		width: 90px;
+		width: 90%;
 		padding: 28px 0;
 	}
 	&:hover{
@@ -227,6 +227,16 @@
 	font-size: 1.4rem;
 	text-align: center;
 	border-radius: 29px;
+	@include transition-middle();
+	i{
+		@include transition-middle();
+	}
+	&:hover{
+		box-shadow: 0 0 15px 0 rgba($primary,0.4);
+		i{
+			transform: translateX(5px);
+		}
+	}
 }
 
 
@@ -277,6 +287,27 @@
 \*------------------------------------*/
 .table{
 	@include df_center(column);
+	@include rwd($w-table){
+		display: block;
+		&__img{
+			padding: 0 20px;
+			overflow-x: scroll;
+			img{
+				@include size(800px,auto);
+				max-width: 700px;
+			}
+			&::-webkit-scrollbar-track{
+				// -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+				background-color: rgba($secondary-primary,0.4);
+			}
+			&::-webkit-scrollbar{
+				height: 4px;
+			}
+			&::-webkit-scrollbar-thumb {
+				background-color: rgba($secondary-primary,0.8);
+			  }
+		}
+	}
 }
 
 
@@ -341,13 +372,22 @@
 			display: block;
 			padding-bottom: 3px;
 			border-bottom: 2px solid $primary;
+			@include transition-fast();
 			&:after{
 				content: '';
 				display: inline-block;
 				margin-left: 8px;
 				@include bgimg('../img/symbol/qaArrow.svg');
 				@include size(5px,10px);
-				transform: rotate(-90deg);
+				@include transition-fast();
+				transform: translateX(0) rotate(-90deg);
+			}
+			&:hover{
+				letter-spacing: 1.2px;
+				&:after{
+					transform: translateX(3px) rotate(-90deg);
+
+				}
 			}
 		}
 		@include rwd($w-mb){
