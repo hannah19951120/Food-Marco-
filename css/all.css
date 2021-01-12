@@ -1424,6 +1424,10 @@ span, .span {
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden !important;
+}
+
 body {
   width: 100vw;
   overflow-x: hidden !important;
@@ -2412,7 +2416,6 @@ img {
 /*   Action開始   */
 .servier__listMb {
   position: relative;
-  width: 100%;
   overflow-x: hidden !important;
 }
 
@@ -2433,7 +2436,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  overflow: hidden;
+  overflow: hidden !important;
   z-index: 1;
 }
 
@@ -2894,13 +2897,9 @@ img {
 }
 
 .servier__listMb .swiper-slide {
-  width: 390px;
-  height: auto;
-  padding: 20px 15px;
-}
-
-.servier__listMb .two .swiper-slide {
   width: 300px;
+  height: 190px;
+  padding: 20px 15px;
 }
 
 .servier__listMb .swiper-slide li {
