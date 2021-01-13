@@ -309,6 +309,10 @@ span, .span {
   display: block;
 }
 
+.d-none {
+  display: none;
+}
+
 .d-inline {
   display: inline;
 }
@@ -2416,8 +2420,18 @@ img {
 
 /*   Action開始   */
 .servier__listMb {
-  position: relative;
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
   overflow-x: hidden !important;
+}
+
+@media (max-width: 690px) {
+  .servier__listMb {
+    position: relative;
+    opacity: 1;
+    z-index: 1;
+  }
 }
 
 .servier__listMb .swiper-pagination-bullet {
@@ -2973,7 +2987,7 @@ img {
 
 @media (max-width: 690px) {
   .businessHero {
-    background-position: 0 0;
+    background-position: 45% 0;
   }
 }
 
@@ -3138,13 +3152,7 @@ img {
 
 @media (max-width: 801px) {
   .getMoney {
-    margin-top: 10px;
-  }
-}
-
-@media (max-width: 690px) {
-  .getMoney {
-    margin-top: 20px;
+    margin-top: 50px;
   }
 }
 
@@ -3186,7 +3194,7 @@ img {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    width: 60%;
+    width: 70%;
     margin-top: 20px;
   }
 }
@@ -3211,7 +3219,7 @@ img {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-top: 60px;
+  margin-top: 70px;
   margin-bottom: 20px;
 }
 

@@ -73,6 +73,7 @@
  $DISPLAY
 \*------------------------------------*/
 .d-block{display: block;}
+.d-none{display: none;}
 .d-inline{display: inline;}
 .d-inline-block{display: inline-block;}
 .d-flex-row{@include df_center();}

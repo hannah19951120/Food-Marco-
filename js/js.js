@@ -28,20 +28,6 @@ $(document).ready(function() {
         $('.header__nav').toggleClass('header__nav--active');
     })
 
-    // 首頁-精彩服務
-    $('.service__listPc_card').click(function(){
-        let serviceId = $(this).attr("data-service");
-        console.log(serviceId);
-        let serviceUrl = 'img/p_home/service_'+ serviceId +'.png';
-        console.log(serviceUrl);
-        $('#home-service-phone').attr('src',serviceUrl);
-        
-        if($(this).hasClass('service__listPc_card--active')){
-            // console.log('none');
-        }else{
-            $(this).addClass('service__listPc_card--active');
-            $(this).siblings().removeClass('service__listPc_card--active');
-        }
-    })
+
 
 });

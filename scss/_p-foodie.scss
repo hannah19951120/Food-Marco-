@@ -61,10 +61,7 @@
 .getMoney{
 	margin-top: 80px;
 	@include rwd($w-pad){
-		margin-top: 10px;
-	}
-	@include rwd($w-table){
-		margin-top: 20px;
+		margin-top: 50px;
 	}
 	.wrap{
 		@include df_center();
@@ -81,7 +78,7 @@
 		width: 40%;
 		@include rwd($w-table){
 			align-self: center;
-			width: 60%;
+			width: 70%;
 			margin-top: 20px;
 		}
 		@include rwd($w-mb){
@@ -95,7 +92,7 @@
 .foodieCard{
 	@include df_center();
 	justify-content: space-around;
-	margin-top: 60px;
+	margin-top: 70px;
 	margin-bottom: 20px;
 	.card-rectangle{
 		margin: 15px 0;
