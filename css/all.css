@@ -3312,11 +3312,11 @@ img {
   }
 }
 
-.header__burger {
+.header__burger--marcopolo {
   border: 3px solid #fff;
 }
 
-.header__burger span {
+.header__burger--marcopolo span {
   background-color: #fff;
 }
 
