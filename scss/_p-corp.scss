@@ -91,6 +91,12 @@
 		&_text{
 			margin-top: 25px;
 		}
+		@include rwd($w-table){
+			flex-direction: column;
+			&_logo{
+				margin-right: 0;
+			}
+		}
 	}
 	&:before,&:after{
 		content: '';

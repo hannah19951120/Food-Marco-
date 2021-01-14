@@ -20,8 +20,6 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="js/js.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script type="text/javascript" src="js/swiper.js"></script>
 
 </head>
 <body>
@@ -113,7 +111,7 @@
    </section>
 
    	<!-- 三顆大按鈕-->
-   <section class="mainNav">
+   <section class="mainNav" data-aos="flip-up" data-aos-once="true">
         <div class="mainNav__list">
             <a href="business.html" class="mainNav__list_btn  b-info">
                 <img src="img/p_home/mainNav_icon1.svg" alt="餐廳夥伴">
@@ -142,7 +140,7 @@
    	<!-- 精彩服務 -->
    <section class="serviceHighligts mt-5">
        <div class="wrap">
-       <div class="title">
+       <div class="title" data-aos="fade-zoom-in" data-aos-once="true" data-aos-duration="1500">
         <h2 class="h2">精彩服務</h2>
         <h6 class="en_text">SERVICE HIGHLIGHTS</h6>
        </div>
@@ -208,18 +206,18 @@
 
    	<!-- 分享循環 -->
    <section class="share wrap">
-        <div class="title mb-5 mt-7">
+        <div class="title mb-5 mt-7"  data-aos="fade-zoom-in" data-aos-once="true" data-aos-duration="1500">
          <h2 class="h2">真實分享 全新經驗交流生態圈</h2>
          <h6 class="en_text">SHARE FOOD STAY TRUE</h6>
         </div>
-        <img src="img/p_home/sharePc.png" class="disNone-mb share__imgPc">
-        <img src="img/p_home/shareMb.png" class="disBlock-mb share__imgMb">
+        <img src="img/p_home/sharePc.png" class="disNone-mb share__imgPc" data-aos="fade-up" data-aos-once="true">
+        <img src="img/p_home/shareMb.png" class="disBlock-mb share__imgMb" data-aos="fade-up" data-aos-once="true">
    </section>
 
     <!-- 價值理念 -->
     <section class="believe b-primary my-7">
         <div class="wrap p-relative">
-            <div class="believe__left">
+            <div class="believe__left" data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-out-sine" data-aos-once="true">
             <h3 class="h3 t-white t-strong mb-3">
                 我們深信...<br>每個體驗都有價值，<br>美好經驗更值得珍藏。
             </h3>
@@ -228,7 +226,7 @@
             <h5 class="t-white">
                 分享者有機會獲得更好的回饋，進而促進正向的交流循環，創造美好未來。 </h5>
             </div>
-            <div class="believe__right">
+            <div class="believe__right"  data-aos="fade-left" data-aos-duration="2000" data-aos-easing="ease-out-back" data-aos-once="true">
                 <img src="img/p_home/believe.png">
             </div>
         </div>
@@ -281,21 +279,12 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        var homeHeroSwiper = new Swiper('#homeHeroSwiper', {
-            // Optional parameters
-            direction: 'horizontal',
-            autoplay:true,
-            disableOnInteraction: false,
-            loop: true,
     
-            pagination: {
-                el: '.swiper-pagination',
-            },
-        })   
-
-        
-        </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/swiper.js"></script>
+    <script type="text/javascript" src="js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

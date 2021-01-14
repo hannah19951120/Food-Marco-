@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="js/js.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
     <div class="header__banner  disBlock-table">
@@ -70,11 +69,11 @@
     <!-- getMoneyo開始 -->
    <section class="getMoney">
        <div class="wrap">
-            <div class="getMoney__text pt-4">
+            <div class="getMoney__text pt-4" data-aos="fade-left" data-aos-duration="800">
                 <h2 class="h2 t-strong">全新商業循環 文章有感變現</h2>
                 <h4 class="h4 t-primary">打破業配定額稿費  分潤收入無上限</h4>
             </div>
-            <div class="getMoney__img">
+            <div class="getMoney__img" data-aos="fade-right" data-aos-duration="800">
                 <img src="img/p_foodie/getmoney.png" alt="全新商業循環，文章有感變現">
             </div>
         </div>
@@ -82,19 +81,19 @@
 
     <!-- foodieCard開始 -->
     <section class="foodieCard wrap">
-            <div class="card-rectangle">
+            <div class="card-rectangle" data-aos="fade-up" data-aos-duration="800">
                 <i style="background-image:url('img/p_foodie/car_1.jpg');"></i>
                 <h3 class="h3 t-primary t-strong">美食真分享<br>內容更有價</h3>
                 <hr>
                 <h6 class="h6 t-muted t-center">獲得認可就分潤<br>吃多賺得多</h6>
             </div>
-            <div class="card-rectangle">
+            <div class="card-rectangle" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
                 <i style="background-image:url('img/p_foodie/car_2.jpg');"></i>
                 <h3 class="h3 t-primary t-strong">堅持0業配<br>追求真分享</h3>
                 <hr>
                 <h6 class="h6 t-muted t-center">專注分享最真實<br>的用餐體驗</h6>
             </div>
-            <div class="card-rectangle">
+            <div class="card-rectangle" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                 <i style="background-image:url('img/p_foodie/car_3.jpg');"></i>
                 <h3 class="h3 t-primary t-strong">優質好食記<br>曝光不煩惱</h3>
                 <hr>
@@ -104,10 +103,10 @@
 
     <!-- beFoodie開始 -->
     <section class="beFoodie wrap">
-        <div class="beFoodie__img">
+        <div class="beFoodie__img" data-aos="fade-left" data-aos-duration="800">
             <img src="img/p_foodie/beFoodie.png" alt="成為FoodMarco分享家">
         </div>
-        <div class="beFoodie__text">
+        <div class="beFoodie__text" data-aos="fade-right" data-aos-duration="800">
             <h2 class="h2 t-strong">如何成為分享家？</h2>
             <h4 class="h4 t-primary mt-2">寫下第一篇食記，立刻變身Food Marco分享家。</h4>
             <h5 class="h5 t-muted">成為Food Marco分享家後，就有機會被美食客認可、賺分潤。認可越多便能晉升分享職人。</h5>
@@ -116,10 +115,10 @@
 
     <!-- foodieTable開始 -->
     <section class="foodieTable table b-linear-primary py-5">
-        <div class="foodieTable__text table__text mb-3">
+        <div class="foodieTable__text table__text mb-3"  data-aos="fade-zoom-in" data-aos-duration="1500">
             <img src="img/p_foodie/title.png" alt="獲得美食客認可 往專家之路邁進">
         </div>
-        <div class="foodieTable__table table__img">
+        <div class="foodieTable__table table__img" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="200">
             <img src="img/p_foodie/foodie_table.png">
         </div>
     </section>
@@ -227,6 +226,11 @@
         </div>
     </footer>
 
-  
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/swiper.js"></script>
+    <script type="text/javascript" src="js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

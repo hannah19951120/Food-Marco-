@@ -1,5 +1,20 @@
 $(document).ready(function() {
-    
+    var homeHeroSwiper = new Swiper('#homeHeroSwiper', {
+        observer: true,
+        observeParents: true,
+        direction: 'horizontal',
+        autoplay:true,
+        loop: true,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+    },
+        pagination: {
+            el: '.swiper-pagination',
+        },
+    })   
+
+
     var swiperMB = new Swiper( '.swiper-container.two', {
         observer: true,
         observeParents: true,
@@ -23,6 +38,7 @@ $(document).ready(function() {
         } ); 
 
     var serviceId;
+
     // PC 版點擊切換
     function servicePcClick (){
         $('.service__listPc_card').click(function(){
@@ -41,11 +57,9 @@ $(document).ready(function() {
 
     function onSwiperChange(){
         var activeSlide = document.querySelector('.swiper-slide-active');
-        // var serviceId = activeSlide.getAttribute("data-swiper-slide-index");
         serviceId = $('.swiper-slide-active .slider-image').attr('data-service');
         console.log(serviceId);
         parseInt(serviceId);
-        // serviceId ++;
         bgiChange(serviceId);
     };
 
