@@ -213,7 +213,7 @@
 	}
 }
 
-/*   shareWord開始   */
+/*   coreValue開始   */
 
 .coreValue{
 	margin-top: -120px;
@@ -266,7 +266,7 @@
 /*   corpLocation開始   */
 
 .corpLocation{
-	@include bgimg('../img/p_corp/map.jpg');
+	@include bgimg('../img/p_corp/mapBg.jpg');
 	&__row{
 		@include df_center();
 		justify-content: space-between;

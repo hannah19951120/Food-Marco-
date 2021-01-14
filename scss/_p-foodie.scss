@@ -135,3 +135,26 @@
 		}
 	}
 }
+
+/*   foodieTable開始   */
+
+.foodieTable{
+		&:after{
+			content: '';
+			position: absolute;
+			display: block;
+			@include size(180px,343px);
+			@include bgimg('../img/p_foodie/form_book.png');
+			background-size: contain;
+			background-position: right bottom;
+			right: calc(50% - 500px);
+			bottom: -40px;
+			@include rwd($w-pc){
+				right: 10px;
+			}
+			@include rwd($w-pad){
+				display: none;
+			}
+		}
+
+}

@@ -52,3 +52,40 @@
 		}
 	}
 }
+
+/*   businessTable開始   */
+
+.businessTable{
+	&:before,&:after{
+		content: '';
+		position: absolute;
+		display: block;
+		@include size(180px,200px);
+		@include bgimg('../img/p_business/table_coin.png');
+		background-size: contain;
+		background-position: right top;
+		z-index: 2;
+		@include rwd($w-pad){
+			display: none;
+		}
+	}
+	&:before{
+		right: calc(50% - 550px);
+		top: -30px;
+		@include rwd($w-pc){
+			right: 5px;
+			transform: scale(0.8);
+		}
+	}
+	&:after{
+		left: calc(50% - 550px);
+		bottom: -50px;
+		transform: scale(0.8) rotate(180deg);
+		@include rwd($w-pc){
+			left: 5px;
+		}
+	}
+	&__text,&__img{
+		z-index: 9;
+	}
+}

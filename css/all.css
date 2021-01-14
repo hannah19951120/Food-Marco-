@@ -1201,6 +1201,7 @@ span, .span {
  $TABLE
 \*------------------------------------*/
 .table {
+  position: relative;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -1211,7 +1212,47 @@ span, .span {
       flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  overflow-y: hidden;
+  overflow: hidden;
+}
+
+.table:before, .table:after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.table:before {
+  width: 582px;
+  height: 666px;
+  background-image: url("../img/deco/believe_bubble1.png");
+  bottom: -250px;
+  left: -10%;
+}
+
+.table:after {
+  width: 428px;
+  height: 438px;
+  background-image: url("../img/deco/believe_bubble2.png");
+  right: -10%;
+  top: -100px;
+}
+
+@media (max-width: 690px) {
+  .table:before {
+    display: none;
+  }
+  .table:after {
+    right: -38%;
+    top: -180px;
+  }
+}
+
+.table__text, .table__img {
+  position: relative;
+  z-index: 5;
 }
 
 @media (max-width: 690px) {
@@ -1220,6 +1261,7 @@ span, .span {
   }
   .table__img {
     padding: 0 20px;
+    overflow-y: hidden;
     overflow-x: scroll;
   }
   .table__img img {
@@ -3066,6 +3108,56 @@ img {
   }
 }
 
+/*   businessTable開始   */
+.businessTable:before, .businessTable:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 180px;
+  height: 200px;
+  background-image: url("../img/p_business/table_coin.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-size: contain;
+  background-position: right top;
+  z-index: 2;
+}
+
+@media (max-width: 801px) {
+  .businessTable:before, .businessTable:after {
+    display: none;
+  }
+}
+
+.businessTable:before {
+  right: calc(50% - 550px);
+  top: -30px;
+}
+
+@media (max-width: 1024px) {
+  .businessTable:before {
+    right: 5px;
+    transform: scale(0.8);
+  }
+}
+
+.businessTable:after {
+  left: calc(50% - 550px);
+  bottom: -50px;
+  transform: scale(0.8) rotate(180deg);
+}
+
+@media (max-width: 1024px) {
+  .businessTable:after {
+    left: 5px;
+  }
+}
+
+.businessTable__text, .businessTable__img {
+  z-index: 9;
+}
+
 /* 
 	2020.12.30
 	foodie _ 分享家
@@ -3289,6 +3381,35 @@ img {
 @media (max-width: 460px) {
   .beFoodie__img {
     width: 80%;
+  }
+}
+
+/*   foodieTable開始   */
+.foodieTable:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 180px;
+  height: 343px;
+  background-image: url("../img/p_foodie/form_book.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-size: contain;
+  background-position: right bottom;
+  right: calc(50% - 500px);
+  bottom: -40px;
+}
+
+@media (max-width: 1024px) {
+  .foodieTable:after {
+    right: 10px;
+  }
+}
+
+@media (max-width: 801px) {
+  .foodieTable:after {
+    display: none;
   }
 }
 
@@ -3627,7 +3748,7 @@ img {
   max-width: 1220px;
 }
 
-/*   shareWord開始   */
+/*   coreValue開始   */
 .coreValue {
   margin-top: -120px;
   padding-top: 180px;
@@ -3715,7 +3836,7 @@ img {
 
 /*   corpLocation開始   */
 .corpLocation {
-  background-image: url("../img/p_corp/map.jpg");
+  background-image: url("../img/p_corp/mapBg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

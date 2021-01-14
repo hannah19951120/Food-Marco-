@@ -286,19 +286,53 @@
  $TABLE
 \*------------------------------------*/
 .table{
+	position: relative;
 	@include df_center(column);
-	overflow-y: hidden;
+	overflow: hidden;
+	&:before,&:after{
+		content: '';
+		display: block;
+		position: absolute;
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	&:before{
+		@include size(582px,666px);
+		background-image: url('../img/deco/believe_bubble1.png');
+		bottom: -250px;
+		left: -10%;
+	}
+	&:after{
+		@include size(428px,438px);
+		background-image: url('../img/deco/believe_bubble2.png');
+		right: -10%;
+		top: -100px;
+	}
+	@include rwd($w-table){
+		&:before{
+			display: none;
+		}
+		&:after{
+			right: -38%;
+			top: -180px;
+		}
+	}
+	&__text,&__img{
+		position: relative;
+		z-index: 5;
+	}
 	@include rwd($w-table){
 		display: block;
 		&__img{
 			padding: 0 20px;
+			overflow-y: hidden;
 			overflow-x: scroll;
 			img{
 				@include size(800px,auto);
 				max-width: 700px;
 			}
 			&::-webkit-scrollbar-track{
-				// -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 				background-color: rgba($secondary-primary,0.4);
 			}
 			&::-webkit-scrollbar{
