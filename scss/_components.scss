@@ -203,21 +203,17 @@
 	border: 3px solid rgba($primary,0);
 	border-radius: 48px;
 	background-color: $primary;
-	@include transition-fast();
+	@include transition-middle($easeInOutSine);
 	a{
 		color: $black;
-		@include transition-fast();
 	}
 	@include rwd($w-mb){
 		width: 90%;
 		padding: 28px 0;
 	}
 	&:hover{
-		background-color: $white;
-		border: 3px solid $primary;
-		a{
-			color: $primary;
-		}
+		transform: translateY(-3px);
+		box-shadow: 0 0 24px 0 rgba(250,190,0,0.61);
 	}
 }
 

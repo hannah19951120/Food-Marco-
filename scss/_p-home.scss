@@ -82,20 +82,20 @@
 				border: 1px solid rgba(232,192,63,0.51);
 				box-shadow: 0 0 22px 0 rgba(255,225,155,0.61);
 				border-radius: 8px;
-				&:nth-child(1){
+				&--1{
 					top: 60px;
 					z-index: 3;
 				}
-				&:nth-child(2){
+				&--2{
 					top: 0px;
 					left: 160px;
 					z-index: 2;
 				}
 				@include rwd($w-pad){
-					&:nth-child(1){
+					&--1{
 						width: 55%;
 					}
-					&:nth-child(2){
+					&--2{
 						width: 50%;
 						left: 60%;
 					}
@@ -415,3 +415,46 @@
 }
 
 /*   Action開始   */
+
+.actionIndex{
+	@include bgimg('../img/p_home/action_bubble.png');
+	background-position: calc(50% - 450px) 120px;
+	background-size: 390px;
+	@include rwd($w-pad){
+		background-position: calc(50% - 350px) 120px;
+	}
+	&:after{
+		content: '';
+		position: absolute;
+		display: block;
+		@include size(293px,129px);
+		left: calc(50% + 250px);
+		bottom: 0;
+		@include bgimg('../img/p_home/action_marco.png');
+		@include rwd($w-pad){
+			display: none;
+		}
+	}
+	.wrap{
+		&:after,&:before{
+			content: '';
+			position: absolute;
+			display: block;
+			@include rwd($w-pad){
+				display: none;
+			}
+		}
+		&:after{
+			@include size(251px,171px);
+			left: 0;
+			bottom: -48px;
+			@include bgimg('../img/p_home/action_airplane2.png');
+		}
+		&:before{
+			@include size(158px,41px);
+			top: 0;
+			right: -48px;
+			@include bgimg('../img/p_home/action_airplane1.png');
+		}
+	}
+}

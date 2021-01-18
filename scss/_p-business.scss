@@ -89,3 +89,24 @@
 		z-index: 9;
 	}
 }
+
+/*   businessTable開始   */
+
+.business__action{
+	&:after{
+		content: '';
+		position: absolute;
+		display: block;
+		@include bgimg('../img/p_business/action.png');
+		@include size(337px,155px);
+		bottom: 0;
+		right: calc(50% - 550px);
+		@include rwd($w-pc){
+			@include size(272px,125px);
+			right: 0;
+		}
+		@include rwd($w-pad){
+			display: none;
+		}
+	}
+}

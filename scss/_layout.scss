@@ -56,9 +56,14 @@ img{
 		}
 		&_download{
 			@include df_center();
+			position: relative;
 			padding: 5px 15px;
 			border: 1px solid $dark-primary;
 			border-radius: 15px;
+			a{
+				position: absolute;
+				@include size(100%);
+			}
 			p{
 				margin-right: 3px;
 				font-weight: $t-bold;
