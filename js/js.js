@@ -29,7 +29,7 @@ $(document).ready(function() {
     })
 
 
-    $(".action__download_row--apple,.action__download_row--google,.webFoodie").click(function(){
+    $(".webFoodie").click(function(){
         event.preventDefault();
         alert("Coming soon !");
       });
