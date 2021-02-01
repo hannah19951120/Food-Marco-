@@ -77,6 +77,7 @@
 .d-inline{display: inline;}
 .d-inline-block{display: inline-block;}
 .d-flex-row{@include df_center();}
+.d-flex-column{@include df_center(column);}
 
 
 

@@ -5,6 +5,12 @@
 /*------------------------------------*\
  $TEXT
 \*------------------------------------*/
+.t-leftLine-primary{
+	display: block;
+	padding-left: 15px;
+	border-left: 6px solid $primary;
+}
+
 .t-underLine-primary{
 	position: relative;
 	display: inline-block;
@@ -204,9 +210,6 @@
 	border-radius: 48px;
 	background-color: $primary;
 	@include transition-middle($easeInOutSine);
-	a{
-		color: $black;
-	}
 	@include rwd($w-mb){
 		width: 90%;
 		padding: 28px 0;

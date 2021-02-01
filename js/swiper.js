@@ -78,5 +78,18 @@ $(document).ready(function() {
 
     servicePcClick ();
     
+    //  新手指南Swiper 開始
+    var tutorialSwiper = new Swiper('.tutorialSwiper', {
+        observer: true,
+        observeParents: true,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'progressbar',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
 
 });

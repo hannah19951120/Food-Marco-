@@ -338,6 +338,19 @@ span, .span {
       flex-wrap: wrap;
 }
 
+.d-flex-column {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 /*------------------------------------*\
  $TEXT-WEIGHT
 \*------------------------------------*/
@@ -826,6 +839,12 @@ span, .span {
 /*------------------------------------*\
  $TEXT
 \*------------------------------------*/
+.t-leftLine-primary {
+  display: block;
+  padding-left: 15px;
+  border-left: 6px solid #FABE00;
+}
+
 .t-underLine-primary {
   position: relative;
   display: inline-block;
@@ -1093,10 +1112,6 @@ span, .span {
   border-radius: 48px;
   background-color: #FABE00;
   transition: all 0.4s cubic-bezier(0.37, 0, 0.63, 1);
-}
-
-.btn-lg-primary a {
-  color: #000;
 }
 
 @media (max-width: 460px) {
@@ -3510,6 +3525,205 @@ img {
 @media (max-width: 801px) {
   .foodieTable:after {
     display: none;
+  }
+}
+
+/* 
+	2021.01.26
+	tutorial _ 新手指南
+*/
+@media (max-width: 460px) {
+  .tutorial .wrap {
+    width: 100%;
+  }
+}
+
+.tutorialHero {
+  width: 100%;
+  margin-top: 20px;
+  padding: 80px 5px 100px 0;
+}
+
+.tutorialHero__block {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.tutorialHero__left_download {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.tutorialHero__left_download img {
+  width: 189px;
+}
+
+.tutorialHero__right {
+  width: 60%;
+}
+
+@media (max-width: 690px) {
+  .tutorialHero__block {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    margin-top: 30px;
+  }
+  .tutorialHero__right {
+    width: 85%;
+    margin-top: 20px;
+  }
+}
+
+/*   tutorialHeader開始   */
+.tutorialHeader {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.tutorialHeader__list {
+  position: relative;
+  width: 25%;
+  background-color: #FDEEBE;
+  border-radius: 13px;
+}
+
+.tutorialHeader__list a {
+  height: 130px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #6E5300;
+}
+
+.tutorialHeader__list--active {
+  position: relative;
+  background-color: #FABE00;
+}
+
+.tutorialHeader__list--active a {
+  color: #000;
+}
+
+.tutorialHeader__list--active:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  display: block;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-top-color: #FABE00;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 690px) {
+  .tutorialHeader {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .tutorialHeader__list {
+    width: 33.3333%;
+    border-radius: 0px;
+  }
+}
+
+/*   tutorialBar開始   */
+.tutorialSwiper {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+  --swiper-theme-color: #FABE00;
+  --swiper-navigation-color: #FABE00;
+  --swiper-navigation-size: 30px;
+}
+
+.tutorialSwiper .swiper-slide {
+  padding: 40px 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-align: start;
+      align-items: flex-start;
+}
+
+.tutorialSwiper__content {
+  margin-left: 50px;
+}
+
+.tutorialSwiper .swiper-pagination-progressbar {
+  height: 6px !important;
+  background-color: #FDEEBE;
+  border-radius: 21px;
+}
+
+@media (max-width: 801px) {
+  .tutorialSwiper {
+    height: 700px;
+  }
+  .tutorialSwiper .swiper-slide {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .tutorialSwiper .swiper-slide img {
+    -ms-flex-order: 2;
+        order: 2;
+  }
+  .tutorialSwiper__content {
+    margin-left: 0;
+    margin-bottom: 20px;
+    -ms-flex-order: 1;
+        order: 1;
   }
 }
 

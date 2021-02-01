@@ -29,10 +29,16 @@ $(document).ready(function() {
     })
 
 
-    $(".webFoodie").click(function(){
+    // 新手指南Swiper
+    $('.tutorialHeader__list').click(function(){
         event.preventDefault();
-        alert("Coming soon !");
-      });
+        $(this).addClass('tutorialHeader__list--active');
+        $(this).siblings().removeClass('tutorialHeader__list--active');
+
+        let target = $(this).attr('data-tutorial');
+        $('.tutorialSwiper').addClass('d-none');
+        $('#'+target).removeClass('d-none');
+    })
 
 
 });

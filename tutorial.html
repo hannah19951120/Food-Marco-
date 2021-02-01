@@ -38,7 +38,7 @@
         <div class="wrap">
          <p>即刻開始體驗Food Marco！</p>
          <div class="header__banner_download">
-            <a href="#" class="scrollBtn" data-scrollName="Foodie"></a>
+            <a href="#" class="scrollBtn" data-scrollName="Tutorial" id="gtm-tutorial-download-mbFix"></a>
              <p>立即下載</p>
              <img src="img/symbol/download-arrow.svg" alt="下載Food Marco">
          </div>
@@ -59,154 +59,232 @@
        </ul>
    </header>
    <div class="header__space  disBlock-table"></div>
-   <div class="btn-fix b-info p-fixed scrollBtn"  data-scrollName="Foodie">
-       <a href="#" target="_blank"></a>
+   <div class="btn-fix b-info p-fixed scrollBtn"  data-scrollName="Tutorial">
+       <a href="#" target="_blank" id="gtm-tutorial-scrollDown-pcFix"></a>
        <h5 class="h5 t-white t-strong mr-2">立即體驗</h5>
        <i></i>
    </div>
    <!-- 固定Layout -->
-   <!-- foodieHero開始 -->
-   <section class="foodieHero">
-       <div class="foodieHero__block wrap">
-            <h2 class="displayH1  t-center  t-underLine-primary">真實分享 內容有價</h2>
-            <h4 class="t-left mt-2">好的用餐經驗值得被看見，<br>成為分享家，讓我們替你帶來更多回饋吧！</h4>
-            <div class="btn-md b-primary mt-2 cursor-pointer scrollBtn"  data-scrollName="Foodie">
-                <div class="d-flex-row">
-                <h4 class="t-strong mr-2">開始使用</h4>
-                <i class="icon-arrow"></i>
+   <!-- tutorialHero開始 -->
+   <section class="tutorialHero">
+       <div class="tutorialHero__block wrap">
+           <div class="tutorialHero__left">
+                <h2 class="displayH1 t-center t-underLine-primary">新手上路</h2>
+                <h4 class="t-left mt-2">下載Food Marco，<br>讓Marco 教你快速完成APP設定！</h4>
+                <div class="tutorialHero__left_download mt-2">
+                    <a href="https://play.google.com/store/apps/details?id=com.foodmarco.resapp" target="_blank"><img src="img/footer/GooglePlayBadge.png" alt="GooglePlay下載"></a>
+                    <a href="https://apps.apple.com/tw/app/food-marco-%E6%89%BE%E9%A4%90%E5%BB%B3-%E5%AF%AB%E9%A3%9F%E8%A8%98-%E8%B3%BA%E5%9B%9E%E9%A5%8B/id1506563845" target="_blank"><img src="img/footer/AppleStoreBadge.png"  alt="AppleStore下載"></a>
                 </div>
-            </div>
+           </div>
+           <div class="tutorialHero__right">
+               <img src="img/p_tutorial/tutorialHero.png">
+           </div>
         </div>
     </section>
 
-    <!-- getMoneyo開始 -->
-   <section class="getMoney">
-       <div class="wrap">
-            <div class="getMoney__text pt-4" data-aos="fade-left" data-aos-duration="800">
-                <h2 class="h2 t-strong">全新商業循環 文章有感變現</h2>
-                <h4 class="h4 t-primary">打破業配定額稿費  分潤收入無上限</h4>
+   <!-- tutorialSwiper開始 -->
+    <section class="tutorial d-flex-column">
+        <div class="wrap">
+            <ul class="tutorialHeader t-center t-strong">
+                <li class="tutorialHeader__list tutorialHeader__list--active" data-tutorial="swiper-registerd">
+                    <a href="#">
+                        <h4 class="h4">1</h4>
+                        <h2 class="h2">註冊</h3>
+                    </a>
+                </li>
+                <li class="tutorialHeader__list" data-tutorial="swiper-bind">
+                    <a href="#">
+                        <h4 class="h4">2</h4>
+                        <h2 class="h2">綁卡</h3>
+                    </a>
+                </li>
+                <li class="tutorialHeader__list" data-tutorial="swiper-scan">
+                    <a href="#">
+                        <h4 class="h4">3</h4>
+                        <h2 class="h2">付款與抽獎</h3>
+                    </a>
+                </li>
+            </ul>  
+            <div class="tutorialBar mt-6">
+                <div class="tutorialBar__inner transition-slow"></div>
             </div>
-            <div class="getMoney__img" data-aos="fade-right" data-aos-duration="800">
-                <img src="img/p_foodie/getmoney.png" alt="全新商業循環，文章有感變現">
-            </div>
-        </div>
-   </section>
 
-    <!-- foodieCard開始 -->
-    <section class="foodieCard wrap">
-            <div class="card-rectangle" data-aos="fade-up" data-aos-duration="800">
-                <i style="background-image:url('img/p_foodie/car_1.jpg');"></i>
-                <h3 class="h3 t-primary t-strong">美食真分享<br>內容更有價</h3>
-                <hr>
-                <h6 class="h6 t-muted t-center">獲得認可就分潤<br>吃多賺得多</h6>
+            <!-- Swiper1 -->
+            <div class="tutorialSwiper" id="swiper-registerd">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/p_tutorial/registerd/registerd1.png" alt="註冊登入帳號">
+                        <div class="tutorialSwiper__content">
+                            <h5 class="h5 t-muted mb-2">因配合政府政策上傳發票載具與聯繫兌獎相關事宜<br>請先協助完成個人資料填寫</h5>
+                            <h2 class="h2 t-black t-strong t-leftLine-primary">註冊登入帳號</h2>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/p_tutorial/registerd/registerd2.png" alt="點選個人資料">
+                        <div class="tutorialSwiper__content">
+                            <h5 class="h5 t-muted mb-2">因配合政府政策上傳發票載具與聯繫兌獎相關事宜<br>請先協助完成個人資料填寫</h5>
+                            <h2 class="h2 t-black t-strong t-leftLine-primary">點選個人資料</h2>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/p_tutorial/registerd/registerd3.png" alt="完成個人資料填寫與認證">
+                        <div class="tutorialSwiper__content">
+                            <h5 class="h5 t-muted mb-2">因配合政府政策上傳發票載具與聯繫兌獎相關事宜<br>請先協助完成個人資料填寫</h5>
+                            <h2 class="h2 t-black t-strong t-leftLine-primary">完成個人資料填寫與認證</h2>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/p_tutorial/registerd/registerd4.png" alt="填寫與證件相符的中文全名、郵寄地址">
+                        <div class="tutorialSwiper__content">
+                            <h5 class="h5 t-muted mb-2">因配合政府政策上傳發票載具與聯繫兌獎相關事宜<br>請先協助完成個人資料填寫</h5>
+                            <h2 class="h2 t-black t-strong t-leftLine-primary">填寫與證件相符的中文全名、郵寄地址</h2>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/p_tutorial/registerd/registerd5.png" alt="填寫Email">
+                        <div class="tutorialSwiper__content">
+                            <h5 class="h5 t-muted mb-2">因配合政府政策上傳發票載具與聯繫兌獎相關事宜<br>請先協助完成個人資料填寫</h5>
+                            <h2 class="h2 t-black t-strong t-leftLine-primary">填寫Email<br>並至信箱收取認證碼再回填</h2>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/p_tutorial/registerd/registerd6.png" alt="填寫手機號碼">
+                        <div class="tutorialSwiper__content">
+                            <h5 class="h5 t-muted mb-2">因配合政府政策上傳發票載具與聯繫兌獎相關事宜<br>請先協助完成個人資料填寫</h5>
+                            <h2 class="h2 t-black t-strong t-leftLine-primary">填寫手機號碼並至訊息接收認證碼再回填</h2>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/p_tutorial/registerd/registerd7.png" alt="完成註冊">
+                        <div class="tutorialSwiper__content">
+                            <h5 class="h5 t-muted mb-2">因配合政府政策上傳發票載具與聯繫兌獎相關事宜<br>請先協助完成個人資料填寫</h5>
+                            <h2 class="h2 t-black t-strong t-leftLine-primary">完成囉！</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
-            <div class="card-rectangle" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                <i style="background-image:url('img/p_foodie/car_2.jpg');"></i>
-                <h3 class="h3 t-primary t-strong">堅持0業配<br>追求真分享</h3>
-                <hr>
-                <h6 class="h6 t-muted t-center">專注分享最真實<br>的用餐體驗</h6>
+
+             <!-- Swiper2 -->
+             <div class="tutorialSwiper d-none"  id="swiper-bind">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/p_tutorial/bind/bind1.png" alt="點選支付信用卡組織">
+                        <div class="tutorialSwiper__content">
+                            <h2 class="h2 t-black t-strong t-leftLine-primary">點選支付信用卡組織</h2>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/p_tutorial/bind/bind2.png" alt="綁定預設付款的信用卡">
+                        <div class="tutorialSwiper__content">
+                            <h2 class="h2 t-black t-strong t-leftLine-primary">綁定預設付款的信用卡</h2>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/p_tutorial/bind/bind3.png" alt="輸入信用卡資訊">
+                        <div class="tutorialSwiper__content">
+                            <h2 class="h2 t-black t-strong t-leftLine-primary">輸入信用卡資訊</h2>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/p_tutorial/bind/bind4.png" alt="另設付款密碼">
+                        <div class="tutorialSwiper__content">
+                            <h2 class="h2 t-black t-strong t-leftLine-primary">為保障交易安全需另設付款密碼</h2>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/p_tutorial/bind/bind5.png" alt="設定六位數字的付款密碼">
+                        <div class="tutorialSwiper__content">
+                            <h2 class="h2 t-black t-strong t-leftLine-primary">設定六位數字的付款密碼</h2>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/p_tutorial/bind/bind6.png" alt="完成">
+                        <div class="tutorialSwiper__content">
+                            <h2 class="h2 t-black t-strong t-leftLine-primary">完成後還能開啟生物圖形認證喔!</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
-            <div class="card-rectangle" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                <i style="background-image:url('img/p_foodie/car_3.jpg');"></i>
-                <h3 class="h3 t-primary t-strong">優質好食記<br>曝光不煩惱</h3>
-                <hr>
-                <h6 class="h6 t-muted t-center">食記全方位曝光<br>流量看得見</h6>
-            </div>
+
+            <!-- Swiper3 -->
+            <div class="tutorialSwiper d-none" id="swiper-scan">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/p_tutorial/scan/scan1.png" alt="點選付款符號">
+                        <div class="tutorialSwiper__content">
+                            <h2 class="h2 t-black t-strong t-leftLine-primary">點選付款符號，掃描店家QR Code</h2>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/p_tutorial/scan/scan2.png" alt="選擇付款方式">
+                        <div class="tutorialSwiper__content">
+                            <h2 class="h2 t-black t-strong t-leftLine-primary">選擇付款方式</h2>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/p_tutorial/scan/scan3.png" alt="輸入付款金額">
+                        <div class="tutorialSwiper__content">
+                            <h2 class="h2 t-black t-strong t-leftLine-primary">輸入付款金額</h2>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/p_tutorial/scan/scan4.png" alt="輸入付款密碼">
+                        <div class="tutorialSwiper__content">
+                            <h2 class="h2 t-black t-strong t-leftLine-primary">輸入付款密碼</h2>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/p_tutorial/scan/scan5.png" alt="付款完成">
+                        <div class="tutorialSwiper__content">
+                            <h2 class="h2 t-black t-strong t-leftLine-primary">付款完成囉!進行評分才能抽全額免單喔</h2>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/p_tutorial/scan/scan6.png" alt="認可食記">
+                        <div class="tutorialSwiper__content">
+                            <h2 class="h2 t-black t-strong t-leftLine-primary">認可收藏或看的食記或選擇「沒有根據任何食記」</h2>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/p_tutorial/scan/scan7.png" alt="滑動螢幕，抽全額免單">
+                        <div class="tutorialSwiper__content">
+                            <h2 class="h2 t-black t-strong t-leftLine-primary">滑動螢幕，抽全額免單</h2>
+                        </div>
+                    </div>
+                </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+            
+
+        </div>
     </section>
-
-    <!-- beFoodie開始 -->
-    <section class="beFoodie wrap">
-        <div class="beFoodie__img" data-aos="fade-left" data-aos-duration="800">
-            <img src="img/p_foodie/beFoodie.png" alt="成為FoodMarco分享家">
-        </div>
-        <div class="beFoodie__text" data-aos="fade-right" data-aos-duration="800">
-            <h2 class="h2 t-strong">如何成為分享家？</h2>
-            <h4 class="h4 t-primary mt-2">寫下第一篇食記，立刻變身Food Marco分享家。</h4>
-            <h5 class="h5 t-muted">成為Food Marco分享家後，就有機會被美食客認可、賺分潤。認可越多便能晉升分享職人。</h5>
-        </div>
-    </section>
-
-    <!-- foodieTable開始 -->
-    <section class="foodieTable p-relative">
-    <div class="table b-linear-primary py-5">
-        <div class="foodieTable__wrap">
-        <div class="foodieTable__text table__text mb-3"  data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-once="true" >
-            <img src="img/p_foodie/title.png" alt="獲得美食客認可 往專家之路邁進">
-        </div>
-        <div class="foodieTable__table table__img" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="500" data-aos-once="true" >
-            <img src="img/p_foodie/foodie_table.png">
-        </div>
-    </div>
-    </div>
-    </section>
-
-    <!-- foodieQuestion開始 -->
-    <section class="question wrap">
-        <div class="title my-5">
-            <h2 class="h2">常見問題</h2>
-            <h6 class="en_text">Q&A</h6>
-        </div>
-        <ul class="question__list">
-            <li>
-                <a href="#" class="h5 t-black t-bold"><span class="t-primary h5 mr-1">Q1</span>
-                分享家在Food Marco撰寫食記內容需要被審核嗎？有沒有任何限制？
-                </a>
-                <div class="question__list_answer">
-                    <h6 class="h6">Food Marco致力於追求真實的用餐體驗，平台食記內容皆自由撰寫，無需經過審核。</h6>
-                </div>
-            </li>
-            <li>
-                <a href="#" class="h5 t-black t-bold"><span class="t-primary h5 mr-1">Q2</span>
-                Food Marco 分享家食記會在那些平台曝光？
-                </a>
-                <div class="question__list_answer">
-                    <h6 class="h6">分享家所撰寫的食記均會出現在Food Marco網站及APP平台，Food Marco團隊也會篩選適合的食記轉發到Food Marco FB及IG粉絲頁宣傳喔。</h6>
-                </div>
-            </li>
-            <li>
-                <a href="#" class="h5 t-black t-bold"><span class="t-primary h5 mr-1">Q3</span>
-                分享家可以同時經營自己的社群/部落格，也同時在Food Marco寫食記嗎？
-                </a>
-                <div class="question__list_answer">
-                    <h6 class="h6">可以的，Food Marco平台也提供分享連結，歡迎分享家多多利用喔！</h6>
-                </div>
-            </li>
-            <li>
-                <a href="#" class="h5 t-black t-bold"><span class="t-primary h5 mr-1">Q4</span>
-                分享家如何得到分潤？
-                </a>
-                <div class="question__list_answer">
-                    <h6 class="h6">美食客用餐使用Food Marco APP支付餐費，消費並認可分享家撰寫的文章後，該篇撰文分享家即可獲得單筆消費分潤。
-                    </h6>
-                </div>
-            </li>
-            <li>
-                <a href="#" class="h5 t-black t-bold"><span class="t-primary h5 mr-1">Q5</span>
-                分享家如何知道可以得到多少分潤？
-                </a>
-                <div class="question__list_answer">
-                    <h6 class="h6">當分享家獲得分潤後，Food Marco平台每周均會統計分潤總額，並於APP內通知，分享家可於Food Marco APP內查詢。
-                    </h6>
-                </div>
-            </li>
-        </ul>
-        <div class="question__link mt-2">
-            <a href="https://foodmarco.zendesk.com/hc/zh-tw" class="h6 t-muted">找不到想問的問題嗎？前往我們的問答平台</a>
-        </div>
-        </section>
 
     <!-- Action開始 -->
-    <section class="action action--waveBg py-6  mt-7" id='scrollFoodie'>
+    <section class="action action--waveBg py-6  mt-7" id='scrollTutorial'>
         <div class="wrap p-relative">
             <div class="action__title t-center" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-once="true" >
-                <h2 class="h1 t-primary t-strong">我想加入！</h2>
-                <h4 class="h4 mt-2">即刻加入Food Marco分享家，加入真實分享行列</h4>
+                <h2 class="h1 t-primary t-strong">找餐廳、寫食記、賺回饋</h2>
+                <h4 class="h4 mt-2">開始使用Food Marco，最可靠的美食經驗分享平台</h4>
             </div>
             <div class="action__download" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="300" data-aos-once="true" >
-                <div class="btn-lg-primary b-primary p-relative my-2 webFoodie"><a href="#" class="t-strong" target="_blank">立即體驗</a></div>
+                <a href="https://www.foodmarco.com/" class="t-strong" target="_blank" id="gtm-tutorial-web-bottom"><div class="btn-lg-primary b-primary p-relative my-2 t-black">立即體驗</div></a>
                 <div class="action__download_row">
-                    <a href="https://play.google.com/store/apps/details?id=com.foodmarco.resapp" class="action__download_row--google"><img src="img/footer/GooglePlayBadge.png" alt="GooglePlay下載"></a>
-                    <a href="https://apps.apple.com/tw/app/food-marco-%E6%89%BE%E9%A4%90%E5%BB%B3-%E5%AF%AB%E9%A3%9F%E8%A8%98-%E8%B3%BA%E5%9B%9E%E9%A5%8B/id1506563845" class="action__download_row--apple"><img src="img/footer/AppleStoreBadge.png" alt="MacAppStore"></a>    
+                    <a href="https://play.google.com/store/apps/details?id=com.foodmarco.resapp" class="action__download_row--google" id="gtm-tutorial-goolgePlay-bottom" target="_blank"><img src="img/footer/GooglePlayBadge.png" alt="GooglePlay下載"></a>
+                    <a href="https://apps.apple.com/tw/app/food-marco-%E6%89%BE%E9%A4%90%E5%BB%B3-%E5%AF%AB%E9%A3%9F%E8%A8%98-%E8%B3%BA%E5%9B%9E%E9%A5%8B/id1506563845" class="action__download_row--apple" id="gtm-tutorial-appleStore-bottom" target="_blank"><img src="img/footer/AppleStoreBadge.png" alt="MacAppStore"></a>    
                 </div>
             </div>
         </div>
@@ -252,5 +330,7 @@
         <!-- Start of foodmarco Zendesk Widget script -->
 <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=74b2836f-0573-46c6-bacb-e0c7e7ee7bf8"> </script>
 <!-- End of foodmarco Zendesk Widget script -->
+
+
 </body>
 </html>
