@@ -1,0 +1,45 @@
+/* 
+	2020.12.30
+	Layout _ 版面
+*/
+*{
+	box-sizing: border-box;
+}
+html{
+	overflow-x: hidden !important;
+}
+
+body{
+	width: 100vw;
+	overflow-x: hidden !important;
+	background-color: $bg-primary;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+.wrap{
+	width: 100%;
+	max-width: 460px;
+	margin: 0 auto;
+	background-color: $primary;
+	overflow: hidden;
+}
+
+.fixBar{
+	z-index: 9999;
+	width: 100%;
+	max-width: 460px;
+	bottom: 0;	
+	box-shadow: 0 0 11px 0 rgba($dark-primary,0.5);
+	&__list{
+		@include df_center(row);
+		justify-content: space-around;
+		text-align: center;
+		a{
+			color: $white;
+		}
+	}
+}

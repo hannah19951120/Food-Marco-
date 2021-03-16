@@ -1,0 +1,142 @@
+/* 
+	2021.03.15
+	一幻拉麵活動頁
+*/
+
+.intro{
+	@include df_center();
+	position: relative;
+	padding: 50px 10px 160px 10px;
+	margin-top: -2px;
+	@include bgimg('../ebisobaichigen/img/intro_cloud.png');
+	background-size: auto;
+	background-position: bottom;
+	&:after{
+		content: '';
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		@include size(273px,129px);
+		background-image: url('../ebisobaichigen/img/intro_marco.png');
+		background-repeat: no-repeat;
+	}
+}
+// =====================================
+
+
+.ebisoba{
+	position: relative;
+	img{
+		position: relative;
+		z-index: 2;
+		box-shadow: 0 0 11px 0 rgba($dark-primary,0.5);
+	}
+	&::before{
+		content: '';
+		display: block;
+		@include size(118px,29px);
+		position: absolute;
+		left: 10px;
+		top: -29px;
+		@include bgimg('../ebisobaichigen/img/ebisoba_ramenBadge.png');
+
+	}
+}
+// =====================================
+
+
+.awards{
+	@include df_center();
+	padding: 50px 10px 80px 10px;
+	padding-top: 60px;
+	padding-bottom: 80px;
+	@include bgimg('../ebisobaichigen/img/intro_cloud.png');
+	background-size: auto;
+	background-position: bottom;
+	img{
+		position: relative;
+		z-index: 1;
+	}
+	&__step{
+		z-index: 1;
+		display: block;
+		position: relative;
+		margin-bottom: 20px;
+		&::before{
+			content: '';
+			display: block;
+			@include size(20px,58px);
+			background-color: $secondary-primary;
+			position: absolute;
+			bottom: -55px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+}
+// =====================================
+
+
+.rule{
+	padding: 50px 12px 30px 12px;
+	background-color: $secondary-primary;
+	box-shadow: 0 0 11px 0 rgba($dark-primary,0.5);
+	&__title{
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	&List{
+		&__item{
+			@include df_center(row);
+			margin-bottom: 10px;
+			justify-content: flex-start;
+			align-items: flex-start;
+			flex-wrap: nowrap;
+			&_topic{
+				font-weight: 500;
+				padding: 0px 4px;
+				display: block;
+				background-color: $primary;
+				margin-right: 5px;
+				white-space:nowrap;
+			}
+
+		}
+		&__table{
+			flex-wrap: wrap;
+			img{
+				margin-top: 10px;
+			}
+		}
+
+	}
+}
+// =====================================
+
+.bottomBtnList{
+	&__btn{
+		@include df_center();
+		padding: 10px 0;
+		width: 100%;
+		&:nth-child(1){
+			background-color: $warning;
+		}
+		&:nth-child(2){
+			background-color: $info;
+		}
+	}
+}
+// =====================================
+
+
+.regulations{
+	@include df_center();
+	padding-top: 20px;
+	padding-bottom: 130px;
+	&Text{
+		width: 86%;
+		line-height: 18px;
+		list-style-type: decimal;
+	}
+}
