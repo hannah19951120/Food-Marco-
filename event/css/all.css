@@ -1412,10 +1412,29 @@ img {
   color: #fff;
 }
 
+.fixGift {
+  z-index: 999;
+  bottom: 100px;
+}
+
 /* 
 	2021.03.15
 	一幻拉麵活動頁
 */
+.hero__title {
+  position: absolute;
+  left: 50%;
+  top: 82px;
+  opacity: 0;
+  transform: translateX(-50%) scale(1.3);
+  transition: all 0.8s cubic-bezier(0.89, -1.3, 0.2, 1.3);
+}
+
+.hero__title-clear {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
+
 .intro {
   display: -ms-flexbox;
   display: flex;

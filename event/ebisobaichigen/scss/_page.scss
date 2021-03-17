@@ -2,7 +2,25 @@
 	2021.03.15
 	一幻拉麵活動頁
 */
+.hero{
+	&__title{
+		position: absolute;
+		left: 50%;
+		top: 82px;
+		opacity: 0;
+		transform: translateX(-50%) scale(1.3);
+		transition: all 0.8s cubic-bezier(.89,-1.3,.2,1.3);
+		&-clear{
+			opacity: 1;
+			transform: translateX(-50%) scale(1);
+		}
+	}
+}
 
+
+
+
+// =====================================
 .intro{
 	@include df_center();
 	position: relative;
