@@ -1601,6 +1601,11 @@ img {
   white-space: nowrap;
 }
 
+.ruleList__item_dect {
+  border-bottom: 2px #FABE00 solid;
+  padding-bottom: 2px;
+}
+
 .ruleList__table {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
