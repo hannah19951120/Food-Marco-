@@ -33,12 +33,21 @@ img{
 	width: 100%;
 	max-width: 460px;
 	bottom: 0;	
+	background-color: rgba(#363636,1);
 	box-shadow: 0 0 11px 0 rgba($dark-primary,0.5);
 	&__list{
 		@include df_center(row);
 		justify-content: space-around;
 		text-align: center;
+		li{
+			@include size(33.3333%,70px);
+			&:nth-child(2){
+				background-color: rgba($white,0.1);
+			}
+		}
 		a{
+			@include df_center(column);
+			@include size(100%);
 			color: $white;
 		}
 	}
