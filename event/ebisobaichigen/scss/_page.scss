@@ -87,12 +87,15 @@
 		&::before{
 			content: '';
 			display: block;
-			@include size(20px,58px);
-			background-color: $secondary-primary;
+			@include size(29px,17px);
+			@include bgimg('../ebisobaichigen/img/arrow.svg');
 			position: absolute;
-			bottom: -55px;
+			bottom: -30px;
 			left: 50%;
 			transform: translateX(-50%);
+		}
+		&-last:before{
+			display: none;
 		}
 	}
 }
@@ -152,6 +155,7 @@
 		}
 		&:nth-child(2){
 			background-color: $info;
+			display: none;
 		}
 	}
 }

@@ -1551,13 +1551,20 @@ img {
 .awards__step::before {
   content: '';
   display: block;
-  width: 20px;
-  height: 58px;
-  background-color: #FFECAE;
+  width: 29px;
+  height: 17px;
+  background-image: url("../ebisobaichigen/img/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   position: absolute;
-  bottom: -55px;
+  bottom: -30px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.awards__step-last:before {
+  display: none;
 }
 
 .rule {
@@ -1636,6 +1643,7 @@ img {
 
 .bottomBtnList__btn:nth-child(2) {
   background-color: #00B4C8;
+  display: none;
 }
 
 .regulations {
