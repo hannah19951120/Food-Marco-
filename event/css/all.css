@@ -724,7 +724,7 @@ html {
 }
 
 body {
-  width: 100vw;
+  width: 100%;
   overflow-x: hidden !important;
   background-color: #FFDE8D;
 }
@@ -807,7 +807,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-size: 100%;
+  background-size: contain;
   background-position: bottom;
 }
 
@@ -826,27 +826,30 @@ img {
 }
 
 .hero__title {
-  margin-top: 45px;
-  margin-bottom: 20px;
+  margin: 10px auto;
   background-image: url("../pilot/img/heroTitle.png");
   text-indent: 101%;
   white-space: nowrap;
   overflow: hidden;
-  width: 346px;
-  height: 329px;
+  background-size: contain;
+  width: 407px;
+  height: 342px;
+}
+
+@media (max-width: 408px) {
+  .hero__title {
+    width: 320px;
+    height: 269px;
+  }
+}
+
+@media (max-width: 330px) {
+  .hero {
+    background-position: 0px 124%;
+  }
 }
 
 .intro {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   position: relative;
   padding: 50px 10px 160px 10px;
   margin-top: -2px;
@@ -854,8 +857,14 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-size: auto;
+  background-size: contain;
   background-position: bottom;
+}
+
+.intro img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .intro__title {
@@ -863,9 +872,17 @@ img {
   text-indent: 101%;
   white-space: nowrap;
   overflow: hidden;
-  width: 402px;
-  height: 143px;
+  width: 427px;
+  height: 149px;
+  background-size: contain;
   margin-bottom: 20px;
+}
+
+@media (max-width: 403px) {
+  .intro__title {
+    width: 320px;
+    height: 113px;
+  }
 }
 
 .intro:after {

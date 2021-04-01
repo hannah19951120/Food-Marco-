@@ -14,14 +14,20 @@
 		@include size(223px,31px);
 	}
 	&__title{
-		margin-top: 45px;
-		margin-bottom: 20px;
+		margin: 10px auto ;
 		@include text-hide('../pilot/img/heroTitle.png');
-		@include size(346px,329px);
+		background-size: contain;
+		@include size(407px,342px);
+		@include rwd(408px){
+			@include size(320px,269px);
+		};
 	}
 	@include bgimg('../pilot/img/heroBg.png');
-	background-size: 100%;
+	background-size: contain;
 	background-position: bottom ;
+	@include rwd(330px){
+		background-position: 0px 124%;
+	};
 }
 
 
@@ -29,17 +35,26 @@
 
 
 .intro{
-	@include df_center();
+	img{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
 	position: relative;
 	padding: 50px 10px 160px 10px;
 	margin-top: -2px;
 	@include bgimg('../pilot/img/introBg.png');
-	background-size: auto;
+	background-size: contain;
 	background-position: bottom;
+
 	&__title{
 		@include text-hide('../pilot/img/introTitle.png');
-		@include size(402px,143px);
+		@include size(427px,149px);
+		background-size: contain;
 		margin-bottom: 20px;
+		@include rwd(403px){
+			@include size(320px,113px);
+		};
 	}
 	&:after{
 		content: '';
