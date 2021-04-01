@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="14px" viewBox="0 0 10 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>storeStar</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 10 0 10 14 0 14"></polygon>
+    </defs>
+    <g id="ver2_真心換分潤" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-Copy-3" transform="translate(-84.000000, -5706.000000)">
+            <g id="Group-44" transform="translate(84.000000, 5685.000000)">
+                <g id="Group-43">
+                    <g id="storeStar" transform="translate(0.000000, 21.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-2"></g>
+                        <path d="M4.73156764,0.203278606 C4.18682892,2.00269027 2.77809592,5.70711287 0.182534001,6.73142584 C-0.0608446671,6.82787318 -0.0608446671,7.17142282 0.182534001,7.26787016 C2.77809592,8.29218314 4.18682892,11.9973097 4.73156764,13.7967214 C4.81317108,14.0677595 5.1861131,14.0677595 5.26843236,13.7967214 C5.81245526,11.9973097 7.22190408,8.29218314 9.817466,7.26787016 C10.0608447,7.17142282 10.0608447,6.82787318 9.817466,6.73142584 C7.22190408,5.70711287 5.81245526,2.00269027 5.26843236,0.203278606 C5.1861131,-0.0677595354 4.81317108,-0.0677595354 4.73156764,0.203278606" id="Fill-1" fill="#FABE00" mask="url(#mask-2)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
