@@ -285,11 +285,11 @@ $('.tabList__item').click((e)=>{
         subtitle = '新開店x特色餐廳x創意料理 新鮮到貨';
     }else if(type == 'together'){
         showData(togetherData);
-        title = '感情好就要這樣吃';
+        title = '感情好一起吃';
         subtitle = '台北歡聚美食餐廳一次收錄';
     }else if(type == 'vegetarian'){
         showData(vegetarianData);
-        title = '瘋蔬食這樣吃就對了';
+        title = '瘋蔬食這樣吃';
         subtitle = '精選台北市蔬食餐廳';
     }else if(type == 'fitness'){
         showData(fitnessData);
@@ -304,8 +304,8 @@ $('.tabList__item').click((e)=>{
     let tabOffest = $('#tabContent').offset().top;
     let $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
     $body.animate({
-          scrollTop: tabOffest-20
-    }, 800);
+          scrollTop: tabOffest-100
+    }, 200);
 
 
 });
