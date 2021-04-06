@@ -739,7 +739,7 @@ $('.tabList__item').click((e)=>{
     let $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
     $body.animate({
           scrollTop: tabOffest-100
-    }, 200);
+    }, 400);
 
 
 });
