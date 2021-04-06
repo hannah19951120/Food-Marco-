@@ -40,7 +40,7 @@ $(document).ready(function() {
                   nowScroll = true;
                   setTimeout(()=>{ nowScroll = false; }, 550);
 
-                  console.log('往下滾動，前往intro');
+                  // console.log('往下滾動，前往intro');
                   console.log(nowScroll);
 
             }
@@ -53,7 +53,7 @@ $(document).ready(function() {
                   nowScroll = true;
                   setTimeout(()=>{ nowScroll = false; }, 550);
 
-                  console.log('往上滾動，直接往頂 hero');
+                  // console.log('往上滾動，直接往頂 hero');
             }
       }
       lastScrollTop = scrollPos;

@@ -837,6 +837,13 @@ img {
   height: 269px;
 }
 
+@media (max-width: 330px) {
+  .hero__title {
+    width: 300px;
+    height: 252px;
+  }
+}
+
 @media (max-width: 420px) {
   .hero {
     background-position: center bottom;
@@ -845,11 +852,21 @@ img {
 
 @media (max-width: 330px) {
   .hero {
-    background-position: 0px 124%;
+    background-position: 0px 128%;
   }
 }
 
 .intro {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   position: relative;
   padding: 50px 10px 160px 10px;
   margin-top: -2px;
@@ -875,10 +892,18 @@ img {
   width: 427px;
   height: 149px;
   background-size: contain;
+  background-repeat: no-repeat;
   margin-bottom: 20px;
 }
 
-@media (max-width: 403px) {
+@media (max-width: 420px) {
+  .intro__title {
+    width: 380px;
+    height: 135px;
+  }
+}
+
+@media (max-width: 380px) {
   .intro__title {
     width: 320px;
     height: 113px;

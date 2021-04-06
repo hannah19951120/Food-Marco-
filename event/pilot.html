@@ -17,6 +17,8 @@
       <meta property="og:image" content="https://github.com/hannah19951120/Food-Marco-/blob/master/event/pilot/img/og_img_2.jpg?raw=true">
 	<!-- og FB 設定 -->
     <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/aos.css">
+
     <!-- <link rel="stylesheet" href="css/aos.css"> -->
     <script type="text/javascript" src="pilot/js/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="pilot/js/js.js"></script>
@@ -67,12 +69,12 @@
 
         <section class="hero p-relative b-primary" id="hero">
             <h1 class="hero__logo">Food Marco</h1>
-            <h1 class="hero__title">Food Marco 真心換分潤</h1>
-            <img src="pilot/img/heroSubtitle.png" alt="分享真實內容賺分潤的餐食平台">
+            <h1 class="hero__title" data-aos="flip-left" data-aos-duration="1000" data-aos-easing="ease-out-back">Food Marco 真心換分潤</h1>
+            <img src="pilot/img/heroSubtitle.png" alt="分享真實內容賺分潤的餐食平台" data-aos="fade-up" data-aos-delay="250">
         </section>
 
         <section class="intro b-secondary-primary b-shadow" id="intro">
-            <h2 class="intro__title">分享真實內容賺分潤，就在Food Marco</h2>
+            <h2 class="intro__title" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-out-back">分享真實內容賺分潤，就在Food Marco</h2>
             <img src="pilot/img/introText.png" alt="到合作餐廳用Food Marco app付款，最高20000M幣送給你！" class="mb-3">
             <img src="pilot/img/introCoin.png" alt="1M幣=1新台幣">
         </section>
@@ -80,22 +82,22 @@
         <section class="awards b-primary" id='scrollMoney'>
             <img src="pilot/img/awardsTitle.png" alt="活動獎項" class="mb-4">
             <img src="pilot/img/awardText.png" alt="凡至Food Marco合作餐廳單筆消費滿$250並以App付款即得M幣" class="mb-4">
-            <img src="pilot/img/award1.png" alt="付款禮" class='awards__step'>
-            <img src="pilot/img/award2.png" alt="評分禮" class='awards__step'>
-            <img src="pilot/img/award3.png" alt="分享禮" class='awards__step'>
-            <img src="pilot/img/award4.png" alt="認可禮" class='awards__step'>
+            <img src="pilot/img/award1.png" alt="付款禮" class='awards__step' data-aos="fade-up" >
+            <img src="pilot/img/award2.png" alt="評分禮" class='awards__step' data-aos="fade-up" data-aos-delay="250">
+            <img src="pilot/img/award3.png" alt="分享禮" class='awards__step' data-aos="fade-up" data-aos-delay="250">
+            <img src="pilot/img/award4.png" alt="認可禮" class='awards__step' data-aos="fade-up" data-aos-delay="250">
             <img src="pilot/img/awardsCoin.png" alt="1M幣=1新台幣" class="mb-2">
             <p class="t-black t-bold t-center">※本活動之M幣獎金發送時間，請依活動辦法公告為準</p>
         </section>
 
         <section class="bonus b-secondary-primary b-shadow" id='scrollBonus'>
-            <img src="pilot/img/bonus1.png" alt="夢幻加碼1吃拉麵賺更多">
-            <img src="pilot/img/bonus2.png" alt="夢幻加碼2認可獎金無限領">
-            <img src="pilot/img/bonus3.png" alt="夢幻加碼2萬元獎金等你拿">
+            <img src="pilot/img/bonus1.png" alt="夢幻加碼1吃拉麵賺更多" data-aos="fade-up">
+            <img src="pilot/img/bonus2.png" alt="夢幻加碼2認可獎金無限領" data-aos="fade-up">
+            <img src="pilot/img/bonus3.png" alt="夢幻加碼2萬元獎金等你拿" data-aos="fade-up">
         </section>
 
         <section class="store b-primary" id='scrollStore'>
-            <img src="pilot/img/storeTitle.png" alt="合作餐廳" class="mb-2">
+            <img src="pilot/img/storeTitle.png" alt="合作餐廳" class="mb-2"  data-aos="zoom-out">
             <img src="pilot/img/storeText.png" alt="FoodMarco合作餐廳列表" class="mb-4">
             <div class="storeTabContainer">
                 <ul class="tabList">
@@ -175,10 +177,10 @@
 
         <section class="bottomBtn" id='scrollMore'>
             <ul class="bottomBtnList mt-3 mb-5">
-                <li class="bottomBtnList__btn">
+                <li class="bottomBtnList__btn" data-aos="fade-up">
                     <a href="https://bit.ly/3c5nMXA" target="_blank"><img src="pilot/img/bottomBtn1.png" alt="前往一幻拉麵食記"></a>
                 </li>
-                <li class="bottomBtnList__btn">
+                <li class="bottomBtnList__btn" data-aos="fade-up" data-aos-delay="250">
                     <a href="https://food-marco.app.link/VWRzVXzzFeb" target="_blank"><img src="pilot/img/bottomBtn2.png" alt="立即下載Food Marco"></a>
                 </li>
             </ul>
@@ -205,8 +207,8 @@
     <script type="text/javascript" src="pilot/js/storeData.js"></script>
     <script>
         AOS.init({
-            easing: 'ease', // default easing for AOS animations
-  once: true,
+            once: true,
+            easing: 'ease-out-back',
         });
     </script>
 </body>

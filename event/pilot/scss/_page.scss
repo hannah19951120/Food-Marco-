@@ -20,9 +20,9 @@
     @include text-hide("../pilot/img/heroTitle.png");
     background-size: contain;
     @include size(320px, 269px);
-    // @include rwd(408px) {
-    //   @include size(320px, 269px);
-    // }
+    @include rwd(330px) {
+      @include size(300px, 252px);
+    }
   }
   @include bgimg("../pilot/img/heroBg.png");
   background-size: contain;
@@ -31,7 +31,7 @@
     background-position: center bottom;
   }
   @include rwd(330px) {
-    background-position: 0px 124%;
+    background-position: 0px 128%;
   }
 }
 
@@ -43,6 +43,7 @@
     margin-left: auto;
     margin-right: auto;
   }
+  @include df_center(column);
   position: relative;
   padding: 50px 10px 160px 10px;
   margin-top: -2px;
@@ -54,8 +55,12 @@
     @include text-hide("../pilot/img/introTitle.png");
     @include size(427px, 149px);
     background-size: contain;
+    background-repeat: no-repeat;
     margin-bottom: 20px;
-    @include rwd(403px) {
+    @include rwd(420px) {
+      @include size(380px, 135px);
+    }
+    @include rwd(380px) {
       @include size(320px, 113px);
     }
   }
