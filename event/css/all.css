@@ -802,16 +802,17 @@ img {
 */
 .hero {
   padding: 20px 0;
-  height: 100vh;
+  height: 97vh;
   background-image: url("../pilot/img/heroBg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-size: contain;
-  background-position: bottom;
+  background-position: center 180px;
 }
 
-.hero__logo, .hero__title, .hero img {
+.hero__logo, .hero__title,
+.hero img {
   margin: 0 auto;
   display: block;
 }
@@ -832,14 +833,13 @@ img {
   white-space: nowrap;
   overflow: hidden;
   background-size: contain;
-  width: 407px;
-  height: 342px;
+  width: 320px;
+  height: 269px;
 }
 
-@media (max-width: 408px) {
-  .hero__title {
-    width: 320px;
-    height: 269px;
+@media (max-width: 420px) {
+  .hero {
+    background-position: center bottom;
   }
 }
 
@@ -886,7 +886,7 @@ img {
 }
 
 .intro:after {
-  content: '';
+  content: "";
   position: absolute;
   right: 0;
   bottom: 0;
@@ -958,7 +958,7 @@ img {
 }
 
 .storeTabContainer {
-  width: 92%;
+  width: 100%;
   position: relative;
 }
 
@@ -974,6 +974,7 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
+  transition: all 0.5s;
 }
 
 .store .tabList li {
@@ -995,7 +996,7 @@ img {
 }
 
 .store .tabList__item::after {
-  content: '';
+  content: "";
   top: 0;
   left: 0;
   width: 100%;
@@ -1021,8 +1022,7 @@ img {
   width: 100%;
   max-width: 460px;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  box-shadow: 0 0 15px 0 rgba(95, 73, 1, 0.4);
 }
 
 .store .tabList--fix .tabList__item {
@@ -1030,6 +1030,22 @@ img {
   border-radius: 0;
   font-size: 1rem;
   white-space: nowrap;
+}
+
+.store .tabList--fix .tabList__item-active {
+  background-color: #fabe00;
+}
+
+@media (max-width: 460px) {
+  .store .tabList--fix {
+    left: 0;
+    right: 0;
+    transform: translateX(0%);
+  }
+}
+
+.store .tabList--hide {
+  transform: translateY(-500px);
 }
 
 .store .tabContent {
@@ -1050,7 +1066,8 @@ img {
   text-align: center;
 }
 
-.store .tabContent__title h3, .store .tabContent__title h5 {
+.store .tabContent__title h3,
+.store .tabContent__title h5 {
   display: block;
   font-weight: 500;
   line-height: 2.7rem;
@@ -1067,7 +1084,7 @@ img {
 }
 
 .store .tabContent__title h3::after, .store .tabContent__title h3::before {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 10px;
@@ -1154,7 +1171,7 @@ img {
 
 .store .tabCardList__item_bottom p {
   margin-bottom: 4px;
-  color: #6C6654;
+  color: #6c6654;
   line-height: 16px;
 }
 
@@ -1174,6 +1191,8 @@ img {
 }
 
 .rule {
+  position: relative;
+  z-index: 1;
   padding: 50px 12px 30px 12px;
   background-color: #FFECAE;
   box-shadow: 0 0 11px 0 rgba(110, 83, 0, 0.5);

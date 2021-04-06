@@ -2,333 +2,341 @@
 	2021.03.30
 	真心換分潤頁
 */
-.hero{
-	padding: 20px 0 ;
-	height: 100vh;
-	&__logo,&__title,img{
-		margin: 0 auto;
-		display: block;
-	}
-	&__logo{
-		@include text-hide('../pilot/img/logo.png');
-		@include size(223px,31px);
-	}
-	&__title{
-		margin: 10px auto ;
-		@include text-hide('../pilot/img/heroTitle.png');
-		background-size: contain;
-		@include size(407px,342px);
-		@include rwd(408px){
-			@include size(320px,269px);
-		};
-	}
-	@include bgimg('../pilot/img/heroBg.png');
-	background-size: contain;
-	background-position: bottom ;
-	@include rwd(330px){
-		background-position: 0px 124%;
-	};
+.hero {
+  padding: 20px 0;
+  height: 97vh;
+  &__logo,
+  &__title,
+  img {
+    margin: 0 auto;
+    display: block;
+  }
+  &__logo {
+    @include text-hide("../pilot/img/logo.png");
+    @include size(223px, 31px);
+  }
+  &__title {
+    margin: 10px auto;
+    @include text-hide("../pilot/img/heroTitle.png");
+    background-size: contain;
+    @include size(320px, 269px);
+    // @include rwd(408px) {
+    //   @include size(320px, 269px);
+    // }
+  }
+  @include bgimg("../pilot/img/heroBg.png");
+  background-size: contain;
+  background-position: center 180px;
+  @include rwd(420px) {
+    background-position: center bottom;
+  }
+  @include rwd(330px) {
+    background-position: 0px 124%;
+  }
 }
-
 
 // =====================================
 
+.intro {
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  position: relative;
+  padding: 50px 10px 160px 10px;
+  margin-top: -2px;
+  @include bgimg("../pilot/img/introBg.png");
+  background-size: contain;
+  background-position: bottom;
 
-.intro{
-	img{
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	position: relative;
-	padding: 50px 10px 160px 10px;
-	margin-top: -2px;
-	@include bgimg('../pilot/img/introBg.png');
-	background-size: contain;
-	background-position: bottom;
-
-	&__title{
-		@include text-hide('../pilot/img/introTitle.png');
-		@include size(427px,149px);
-		background-size: contain;
-		margin-bottom: 20px;
-		@include rwd(403px){
-			@include size(320px,113px);
-		};
-	}
-	&:after{
-		content: '';
-		position: absolute;
-		right: 0;
-		bottom: 0;
-		@include size(236px,127px);
-		background-image: url('../pilot/img/introMarco.png');
-		background-repeat: no-repeat;
-	}
+  &__title {
+    @include text-hide("../pilot/img/introTitle.png");
+    @include size(427px, 149px);
+    background-size: contain;
+    margin-bottom: 20px;
+    @include rwd(403px) {
+      @include size(320px, 113px);
+    }
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    @include size(236px, 127px);
+    background-image: url("../pilot/img/introMarco.png");
+    background-repeat: no-repeat;
+  }
 }
-
 
 // =====================================
 
-
-.awards{
-	@include df_center();
-	padding: 50px 15px 80px 15px;
-	padding-top: 60px;
-	padding-bottom: 80px;
-	@include bgimg('../pilot/img/awards_cloud.png');
-	background-size: auto;
-	background-position: bottom;
-	&__step{
-		margin-bottom: 30px;
-	}
+.awards {
+  @include df_center();
+  padding: 50px 15px 80px 15px;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  @include bgimg("../pilot/img/awards_cloud.png");
+  background-size: auto;
+  background-position: bottom;
+  &__step {
+    margin-bottom: 30px;
+  }
 }
-
 
 // =====================================
 
-
-.bonus{
-	@include df_center();
-	padding: 0px 10px;
-	padding-top: 20px;
-	padding-bottom: 85px;
-	img{
-		margin-bottom: 35px;
-	}
+.bonus {
+  @include df_center();
+  padding: 0px 10px;
+  padding-top: 20px;
+  padding-bottom: 85px;
+  img {
+    margin-bottom: 35px;
+  }
 }
-
 
 // =====================================
 
+.store {
+  @include df_center();
+  padding-top: 60px;
+  padding-bottom: 70px;
+  &TabContainer {
+    width: 100%;
+    position: relative;
+  }
+  .tabList {
+    @include df_center(row);
+    width: 100%;
+    transition: all 0.5s;
+    li {
+      display: block;
+      width: 25%;
+    }
+    &__item {
+      position: relative;
+      display: block;
+      width: 100%;
+      padding: 20px;
+      font-size: 1.3rem;
+      text-align: center;
+      overflow: hidden;
+      color: $black;
+      background-color: rgba($secondary-primary, 0);
+      border-radius: 8px 8px 0 0;
 
-.store{
-	@include df_center();
-	padding-top: 60px;
-	padding-bottom: 70px;
-	&TabContainer{
-		width: 92%;
-		position: relative;
-	}
-	.tabList{
-		@include df_center(row);
-		width: 100%;
-		li{
-			display: block;
-			width: 25%;
-		}
-		&__item{
-			position: relative;
-			display: block;
-			width: 100%;
-			padding: 20px;
-			font-size: 1.3rem;
-			text-align: center;
-			overflow: hidden;
-			color: $black;
-			background-color: rgba($secondary-primary,0);
-			border-radius: 8px 8px 0 0;
-			&::after{
-				content: '';
-				top: 0;
-				left: 0;
-				@include size(100%,8px);
-				display: block;
-				position: absolute;
-				width: 100%;
-				height: 8px;
-			}
-			&-active{
-				font-weight: 600;
-				background-color: rgba($secondary-primary,1);
-				&::after{
-					background-color: $warning;
-				}
-			}
-		}
-		&--fix{
-			z-index: 999;
-			position: fixed;
-			width: 100%;
-			max-width: 460px;
-			top: 0;
-			left: 50%;
-			transform: translateX(-50%);
-			.tabList__item{
-				background-color: rgba($secondary-primary,1);
-				border-radius: 0;
-				font-size: 1rem;
-				white-space:nowrap;
-			}
-		}
-	}
-	.tabContent{
-		padding: 30px 0;
-		&__title{
-			@include df_center();
-			text-align: center;
-			h3,h5{
-				display: block;
-				font-weight: 500;
-				line-height: 2.7rem;
-			}
-			h3{
-				display: block;
-				position: relative;
-				padding: 12px 0;
-				width: 80%;
-				font-size: 2.4rem;
-				border-top: 2px solid $primary;
-				border-bottom: 2px solid $primary;
-				&::after,&::before{
-					content: '';
-					position: absolute;
-					display: block;
-					@include size(10px,14px);
-					@include bgimg('../pilot/img/storeStar.svg');
-					top: 50%;
-					transform: translateY(-50%);
-				}
-				&::after{
-					left: 0;
-				}
-				&::before{
-					right: 0;
-				}
-			}
-			h5{
-				margin-top: 5px;
-				color: $warning;
-				font-size: 1.1rem;
-			}
-		}
-	}
-	.tabCardList{
-		width: 100%;
-		@include df_center(row);
-		justify-content: flex-start;
-		flex-wrap: wrap;
-		&__item{
-			display: block;
-			margin: 10px 2% 10px 2%;
-			width: 46%;
-			overflow: hidden;
-			border-radius: 2px;
-			background-color: rgba($white,0.5);
-			&_top{
-				position: relative;
-				height: 130px;
-				background-size: cover;
-				background-position: center;
-				p{	
-					position: absolute;
-					padding: 3px;
-					right: 10px;
-					writing-mode: vertical-lr;
-					background-color: $primary;
-				}
-			}
-			&_bottom{
-				height: 158px;
-				padding: 10px 6px 24px 6px;
-				h4{
-					margin-bottom: 5px;
-					font-size: 1.2rem;
-					font-weight: 600;
-					line-height: 1.4rem;
-					letter-spacing: 1px;
-					display: block;
-					padding-left: 6px;
-					border-left: 3px solid $primary;
-				}
-				p{
-					margin-bottom: 4px;
-					color: #6C6654;
-					line-height: 16px;
-				}
-				a{
-					display: inline-block;
-					margin-top: 5px;
-					padding: 4px 10px;
-					font-size: 1rem;
-					font-weight: 500;
-					color: $black;
-					background-color: $primary;
-					img{
-						margin-left: 5px;
-						margin-bottom: 1px;
-					}
-				}
-			}
-		}
-	}
+      &::after {
+        content: "";
+        top: 0;
+        left: 0;
+        @include size(100%, 8px);
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 8px;
+      }
+      &-active {
+        font-weight: 600;
+        background-color: rgba($secondary-primary, 1);
+        &::after {
+          background-color: $warning;
+        }
+      }
+    }
+    &--fix {
+      z-index: 999;
+      position: fixed;
+      width: 100%;
+      max-width: 460px;
+      top: 0;
+
+      box-shadow: 0 0 15px 0 rgba(95, 73, 1, 0.4);
+      .tabList__item {
+        background-color: rgba($secondary-primary, 1);
+        border-radius: 0;
+        font-size: 1rem;
+        white-space: nowrap;
+        &-active{
+          background-color: rgba($primary, 1);
+        }
+      }
+      @include rwd(460px) {
+        left: 0;
+        right: 0;
+        transform: translateX(0%);
+      }
+    }
+    &--hide {
+      transform: translateY(-500px);
+    }
+  }
+  .tabContent {
+    padding: 30px 0;
+    &__title {
+      @include df_center();
+      text-align: center;
+      h3,
+      h5 {
+        display: block;
+        font-weight: 500;
+        line-height: 2.7rem;
+      }
+      h3 {
+        display: block;
+        position: relative;
+        padding: 12px 0;
+        width: 80%;
+        font-size: 2.4rem;
+        border-top: 2px solid $primary;
+        border-bottom: 2px solid $primary;
+        &::after,
+        &::before {
+          content: "";
+          position: absolute;
+          display: block;
+          @include size(10px, 14px);
+          @include bgimg("../pilot/img/storeStar.svg");
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        &::after {
+          left: 0;
+        }
+        &::before {
+          right: 0;
+        }
+      }
+      h5 {
+        margin-top: 5px;
+        color: $warning;
+        font-size: 1.1rem;
+      }
+    }
+  }
+  .tabCardList {
+    width: 100%;
+    @include df_center(row);
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    &__item {
+      display: block;
+      margin: 10px 2% 10px 2%;
+      width: 46%;
+      overflow: hidden;
+      border-radius: 2px;
+      background-color: rgba($white, 0.5);
+      &_top {
+        position: relative;
+        height: 130px;
+        background-size: cover;
+        background-position: center;
+        p {
+          position: absolute;
+          padding: 3px;
+          right: 10px;
+          writing-mode: vertical-lr;
+          background-color: $primary;
+        }
+      }
+      &_bottom {
+        height: 158px;
+        padding: 10px 6px 24px 6px;
+        h4 {
+          margin-bottom: 5px;
+          font-size: 1.2rem;
+          font-weight: 600;
+          line-height: 1.4rem;
+          letter-spacing: 1px;
+          display: block;
+          padding-left: 6px;
+          border-left: 3px solid $primary;
+        }
+        p {
+          margin-bottom: 4px;
+          color: #6c6654;
+          line-height: 16px;
+        }
+        a {
+          display: inline-block;
+          margin-top: 5px;
+          padding: 4px 10px;
+          font-size: 1rem;
+          font-weight: 500;
+          color: $black;
+          background-color: $primary;
+          img {
+            margin-left: 5px;
+            margin-bottom: 1px;
+          }
+        }
+      }
+    }
+  }
 }
-
 
 // =====================================
 
-
-.rule{
-	padding: 50px 12px 30px 12px;
-	background-color: $secondary-primary;
-	box-shadow: 0 0 11px 0 rgba($dark-primary,0.5);
-	&__title{
-		position: relative;
-		left: 50%;
-		transform: translateX(-50%);
-	}
-	&List{
-		&__item{
-			@include df_center(row);
-			margin-bottom: 10px;
-			justify-content: flex-start;
-			align-items: flex-start;
-			flex-wrap: nowrap;
-			&_topic{
-				font-weight: 500;
-				padding: 0px 4px;
-				display: block;
-				background-color: $primary;
-				margin-right: 5px;
-				white-space:nowrap;
-			}
-			&_dect{
-				border-bottom:2px $primary solid; padding-bottom:2px;
-			}
-
-		}
-		&__table{
-			flex-wrap: wrap;
-			img{
-				margin-top: 10px;
-			}
-		}
-	}
+.rule {
+  position: relative;
+  z-index: 1;
+  padding: 50px 12px 30px 12px;
+  background-color: $secondary-primary;
+  box-shadow: 0 0 11px 0 rgba($dark-primary, 0.5);
+  &__title {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &List {
+    &__item {
+      @include df_center(row);
+      margin-bottom: 10px;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+      &_topic {
+        font-weight: 500;
+        padding: 0px 4px;
+        display: block;
+        background-color: $primary;
+        margin-right: 5px;
+        white-space: nowrap;
+      }
+      &_dect {
+        border-bottom: 2px $primary solid;
+        padding-bottom: 2px;
+      }
+    }
+    &__table {
+      flex-wrap: wrap;
+      img {
+        margin-top: 10px;
+      }
+    }
+  }
 }
-
 
 // =====================================
 
-
-.bottomBtnList{
-	&__btn{
-		@include df_center();
-		padding: 10px 0;
-		width: 100%;
-	}
+.bottomBtnList {
+  &__btn {
+    @include df_center();
+    padding: 10px 0;
+    width: 100%;
+  }
 }
-
 
 // =====================================
 
-
-.regulations{
-	@include df_center();
-	padding-top: 20px;
-	padding-bottom: 130px;
-	&Text{
-		width: 86%;
-		line-height: 18px;
-		list-style-type: decimal;
-	}
+.regulations {
+  @include df_center();
+  padding-top: 20px;
+  padding-bottom: 130px;
+  &Text {
+    width: 86%;
+    line-height: 18px;
+    list-style-type: decimal;
+  }
 }
