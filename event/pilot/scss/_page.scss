@@ -5,6 +5,14 @@
 .hero {
   padding: 20px 0;
   height: 93vh;
+  max-height: 900px;
+  @media screen and (min-height:1000px) { 
+    height: 80vh;
+  }
+  @media screen and (min-height:1300px) { 
+    height: 60vh;
+  }
+
   &__logo,
   &__title,
   img {
@@ -14,22 +22,51 @@
   &__logo {
     @include text-hide("../pilot/img/logo.png");
     @include size(223px, 31px);
+    background-size: contain;
+    background-repeat: no-repeat;
+    @include rwd(330px) {
+      @include size(190px, 26px);
+    }
   }
   &__title {
     margin: 10px auto;
     @include text-hide("../pilot/img/heroTitle.png");
     background-size: contain;
-    @include size(320px, 269px);
+    @include size(350px, 294px);
+    
+    @include rwd(350px) {
+      @include size(320px, 269px);
+    }
     @include rwd(330px) {
       @include size(300px, 252px);
     }
   }
-  @include bgimg("../pilot/img/heroBg.png");
-  background-size: contain;
-  background-position: center 180px;
-  @include rwd(420px) {
-    background-position: center bottom;
+  &__content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-80%);
+    @include rwd(375px) {
+      top: 55%;
+    }
+    @include rwd(330px) {
+      top: 55%;
+    }
   }
+  &__marco{
+    position: absolute;
+    width: 85%;
+    max-width: 340px;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    @include rwd(400px) {
+      width: 60%;
+    }
+  }
+  @include bgimg("../pilot/img/heroBg.png");
+  background-size: cover;
+  background-position: center bottom;
   @include rwd(330px) {
     background-position: 0px 128%;
   }
@@ -53,15 +90,21 @@
 
   &__title {
     @include text-hide("../pilot/img/introTitle.png");
-    @include size(427px, 149px);
+    @include size(435px, 155px);
     background-size: contain;
     background-repeat: no-repeat;
     margin-bottom: 20px;
     @include rwd(420px) {
-      @include size(380px, 135px);
+      @include size(380px, 136px);
     }
     @include rwd(380px) {
+      @include size(360px, 128px);
+    }
+    @include rwd(365px) {
       @include size(320px, 113px);
+    }
+    @include rwd(320px) {
+      @include size(315px, 112px);
     }
   }
   &:after {
@@ -88,6 +131,22 @@
   &__step {
     margin-bottom: 30px;
   }
+}
+.awardFix{
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  @include df_center(row);
+  @include size(100.5%,46px);
+  max-width: 460px;
+  background-color: $info;
+  box-shadow: 0 0 11px 0 rgba($dark-primary,0.5);
+  transform: translateY(-100%);
+  transition: all 0.1s ease-in;
+  &--active{
+    transform: translateY(0%);
+  }
+
 }
 
 // =====================================

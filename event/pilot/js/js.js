@@ -1,4 +1,5 @@
 let scroll = true;
+let nowScroll = false;
 $(document).ready(function() {
 
     $('.hero__title').addClass('hero__title-clear')
@@ -6,6 +7,7 @@ $(document).ready(function() {
     // 按鈕滑動
    $(".scrollBtn").bind("click",function(){
     event.preventDefault();
+    nowScroll = true;
     let id=$(this).attr("data-scrollName");
 
     let target_top = $("#scroll"+id).offset().top; // 取得目標區塊的y座標
@@ -13,12 +15,12 @@ $(document).ready(function() {
           $body.animate({
                 scrollTop: target_top
           }, 800);
-    scroll = false;
+    setTimeout(()=>{ nowScroll = false; }, 880);
 
     })
       
   // ================= 滾動到指定部位 =================
-  let nowScroll = false;
+
   let lastScrollTop =0, delta =5;
     $(window).scroll((event)=>{
 
@@ -60,6 +62,17 @@ $(document).ready(function() {
   })
   
   // ================= 滾動監聽餐廳列表Tab =================
-    
+
+  $(window).scroll((event)=>{
+
+      let scrollPos = $(window).scrollTop();
+      let awardtop = $('.awards').offset().top;
+      let awardTTL = $('#awardsStep3').offset().top+50;
+      if(scrollPos>=awardtop&&scrollPos<awardTTL){
+            $('.awardFix').addClass('awardFix--active')
+      }else{
+            $('.awardFix').removeClass('awardFix--active')
+      }
+  })
 
 });
