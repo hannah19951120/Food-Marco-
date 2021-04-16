@@ -3729,6 +3729,295 @@ img {
 
 /* 
 	2020.12.30
+	store _ 店家專區
+*/
+.storeHero {
+  width: 100%;
+  margin-top: 20px;
+  padding: 80px 5px 154px 0;
+  background-image: url("../img/p_store/storeBg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 690px) {
+  .storeHero__block {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 333px) {
+  .storeHero__block .displayH1 {
+    font-size: 2.3rem;
+  }
+}
+
+.storeHero__block_left {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+}
+
+.storeHero__block_left img {
+  width: 189px;
+}
+
+.storeContet {
+  position: relative;
+  padding: 55px 0;
+  background-color: #F9F8F5;
+}
+
+.storeContet__map {
+  width: 100%;
+  height: 300px;
+}
+
+.storeContet:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  bottom: 50px;
+  background-image: linear-gradient(180deg, rgba(249, 248, 245, 0) 0%, #F9F8F5 90%);
+}
+
+/*   storeSelect   */
+.storeSelect {
+  width: 100%;
+  max-width: 367px;
+  padding: 10px 30px;
+  border: 1px solid #979797;
+  border-radius: 11px;
+  background: url("../img/p_store/storeTriangle.svg") no-repeat 95% center #fff;
+  font-size: 1.3rem;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.storeSelect::-ms-expand {
+  display: none;
+}
+
+/*   storeCard   */
+.storeList {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  margin: 0 -2%;
+  height: 800px;
+  overflow-y: scroll;
+}
+
+@media (max-width: 690px) {
+  .storeList {
+    height: 70vh;
+  }
+}
+
+.storeCard {
+  overflow: hidden;
+  position: relative;
+  width: 22%;
+  height: auto;
+  min-height: 415px;
+  margin: 0 1.5%;
+  margin-bottom: 35px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(151, 151, 151, 0.3);
+  border-bottom: 13px solid #FABE00;
+}
+
+.storeCard__top {
+  position: relative;
+  height: 210px;
+  background-image: url("../img/p_store/store/coffish.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.storeCard__title {
+  position: relative;
+  padding: 10px 15px 0 15px;
+}
+
+.storeCard__title h5 {
+  font-weight: 500;
+  text-align: left;
+}
+
+.storeCard__title_area {
+  display: block;
+  padding: 2px 12px;
+  position: absolute;
+  left: 0;
+  top: -16px;
+  background-color: #FDEEBE;
+  color: #6E5300;
+}
+
+.storeCard__bottom {
+  padding: 0 15px;
+}
+
+.storeCard__bottom h6 {
+  color: #979797;
+}
+
+.storeCard__btn {
+  position: relative;
+  margin-right: 15px;
+  padding: 3px 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 85px;
+  right: calc( -95% + 85px);
+  bottom: 0px;
+  border: 1px solid #FABE00;
+  background-color: #fff;
+}
+
+.storeCard__btn h6 {
+  color: #FABE00;
+  transition: all 0.4s;
+}
+
+.storeCard__btn_arrow {
+  display: block;
+  width: 18px;
+  height: 8px;
+  background-image: url("../img/p_store/storeArrow-yellow.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.storeCard__btn:hover {
+  background-color: #FABE00;
+}
+
+.storeCard__btn:hover h6 {
+  color: #fff;
+}
+
+.storeCard__btn:hover .storeCard__btn_arrow {
+  background-image: url("../img/p_store/storeArrow-white.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 801px) {
+  .storeCard {
+    width: 30%;
+  }
+}
+
+@media (max-width: 690px) {
+  .storeCard {
+    padding: 10px 0 8px 0;
+    margin-bottom: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    background-color: Transparent;
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    border-radius: 0;
+    border-bottom: 0px;
+    width: 100%;
+    height: auto;
+    min-height: auto;
+    border-bottom: 1px solid #979797;
+  }
+  .storeCard:last-child {
+    border-bottom: 0px solid Transparent;
+  }
+  .storeCard__top {
+    width: 35%;
+    height: 68px;
+    border-radius: 6px;
+  }
+  .storeCard__title {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    -ms-flex-align: start;
+        align-items: flex-start;
+    width: 65%;
+  }
+  .storeCard__title hr {
+    display: none;
+  }
+  .storeCard__title_area {
+    border-radius: 14px;
+    position: static;
+    background-color: #FABE00;
+    color: #fff;
+  }
+  .storeCard__bottom {
+    padding: 0;
+  }
+  .storeCard__btn {
+    right: auto;
+  }
+}
+
+/* 
+	2020.12.30
 	corp_馬可波羅科技
 */
 @media (max-width: 690px) {
