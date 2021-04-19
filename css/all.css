@@ -3858,10 +3858,10 @@ img {
 .storeCard__top {
   position: relative;
   height: 210px;
-  background-image: url("../img/p_store/store/coffish.jpg");
-  background-repeat: no-repeat;
+  background-color: #d9d9d9;
+  background-position: center center;
   background-size: cover;
-  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .storeCard__title {

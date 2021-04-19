@@ -95,7 +95,10 @@
 	&__top{
 		position: relative;
 		height: 210px;
-		@include bgimg('../img/p_store/store/coffish.jpg');
+		background-color: $light;
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
 	}
 	&__title{
 		position: relative;

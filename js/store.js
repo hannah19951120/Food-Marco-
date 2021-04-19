@@ -487,7 +487,7 @@ let allStoreData = [
             "name": "Coco Brother 椰兄-中山店",
             "address": '台北市大同區南京西路18巷6弄8-2號號1樓',
             "phone": '02 2550 8675',
-            "photo": '',
+            "photo": 'cocobrother',
             "region": '大同區',
             "landing": '',
         },
@@ -497,9 +497,9 @@ let allStoreData = [
             "name": "Coco Brother 椰兄-南京店",
             "address": '台北市松山區南京東路三段303巷24號1樓',
             "phone": '02 2514 9696',
-            "photo": '',
+            "photo": 'cocobrother',
             "region": '大同區',
-            "landing": '',
+            "landing": 'e8e2ea19-29c8-457f-b3bc-accee061212b',
         },
         {
             "id": '55',
@@ -507,7 +507,7 @@ let allStoreData = [
             "name": "Coco Brother 椰兄-ATT大直店",
             "address": '台北市中山區敬業三路123號6F-5',
             "phone": '02 7707 6860',
-            "photo": '',
+            "photo": 'cocobrother',
             "region": '中山區',
             "landing": '',
         },
@@ -627,9 +627,9 @@ let allStoreData = [
             "name": "一幻拉麵-信義店",
             "address": '台北市信義區松壽路30號1樓',
             "phone": '02 2723 5578',
-            "photo": '',
+            "photo": 'ebisoba',
             "region": '信義區',
-            "landing": '',
+            "landing": 'c30c4425-7027-4d3f-a06c-66a9c361797b',
         },
         {
             "id": '68',
@@ -647,9 +647,9 @@ let allStoreData = [
             "name": "福迪兄弟Foodie Bro Brunch",
             "address": '台北市中山區吉林路315巷40號1樓',
             "phone": '02 2593 6673',
-            "photo": '',
+            "photo": 'foodieBroBrunch',
             "region": '中山區',
-            "landing": '',
+            "landing": 'ae300325-fa67-43ff-96ea-2fcd2ff419e8',
         },
         {
             "id": '70',
@@ -657,9 +657,9 @@ let allStoreData = [
             "name": "小酒館早午餐 Drunk Brunch",
             "address": '台北市中正區金門街24巷35號',
             "phone": '02 2362 1207',
-            "photo": '',
+            "photo": 'drunkBrunch',
             "region": '中正區',
-            "landing": '',
+            "landing": '447b8ea0-5911-4263-b520-f10d3f08bb77',
         },
         {
             "id": '71',
@@ -679,7 +679,7 @@ let allStoreData = [
             "phone": '0908 523 726',
             "photo": 'healerbar',
             "region": '松山區',
-            "landing": '',
+            "landing": '1eef0da0-e4d2-435b-bd19-b13fd002eb19',
         },
         {
             "id": '73',
@@ -699,7 +699,7 @@ let allStoreData = [
             "phone": '02 2786 2529',
             "photo": 'gugugulu',
             "region": '南港區',
-            "landing": '',
+            "landing": '2b058622-9d3b-4c02-ad6e-0644b87e6b59',
         },
         {
             "id": '75',
@@ -729,7 +729,7 @@ let allStoreData = [
             "phone": '02 2753 0077',
             "photo": 'ZhongYuan182',
             "region": '松山區',
-            "landing": '',
+            "landing": '1c109b97-f0e1-422a-81e6-d367e2f9f372',
         },
         {
             "id": '78',
@@ -779,7 +779,7 @@ let allStoreData = [
             "phone": '02 2765 7313',
             "photo": 'bosschicken',
             "region": '信義區',
-            "landing": '',
+            "landing": 'ad5d6e21-1851-42c0-a63d-6a5f57e1f647',
         },
         {
             "id": '83',
@@ -789,7 +789,7 @@ let allStoreData = [
             "phone": '02 2536 5313',
             "photo": 'bosschicken',
             "region": '中山區',
-            "landing": '',
+            "landing": '45dc8c62-8f86-4838-ad6c-5b766d58463c',
         },
         {
             "id": '84',
@@ -809,7 +809,7 @@ let allStoreData = [
             "phone": '02 2557 7862',
             "photo": 'Halalan&ToyyibanMart',
             "region": '大同區',
-            "landing": '',
+            "landing": 'e80a3f7e-513d-4b3b-9eb3-34d66aaa6775',
         },
         {
             "id": '86',
@@ -819,7 +819,7 @@ let allStoreData = [
             "phone": '0938 941 681',
             "photo": 'nekokoji2',
             "region": '大同區',
-            "landing": '',
+            "landing": 'df848002-ec19-40bd-b8b8-e5e1de155057',
         },
         {
             "id": '87',
@@ -829,7 +829,7 @@ let allStoreData = [
             "phone": '0908998682',
             "photo": 'ou-ba-xiao-chu',
             "region": '中山區',
-            "landing": '',
+            "landing": '01893759-69ec-4bca-ac9d-cf40d64b8759',
         },
         {
             "id": '88',
@@ -839,7 +839,7 @@ let allStoreData = [
             "phone": '02 2736 0222',
             "photo": 'grapevine',
             "region": '大安區',
-            "landing": '',
+            "landing": 'e2725aaa-82be-46a0-abe1-2294ea8af0e1',
         },
         {
             "id": '89',
@@ -849,7 +849,7 @@ let allStoreData = [
             "phone": '02 2581 8159',
             "photo": 'miniBase',
             "region": '中山區',
-            "landing": '',
+            "landing": '595e9d33-60b6-4fbb-92be-23b077d8fb96',
         },
         {
             "id": '90',
@@ -869,7 +869,7 @@ let allStoreData = [
             "phone": '02 2760 8100',
             "photo": 'violaTricolor',
             "region": '松山區',
-            "landing": '',
+            "landing": '0fb29f6b-0838-4144-aafc-1bc09939c7a4',
         },
         {
             "id": '92',
@@ -880,6 +880,86 @@ let allStoreData = [
             "photo": 'wu-huang-da-da',
             "region": '中山區',
             "landing": '718638fb-ddcc-4b8f-9cd4-7c095bb9bf3c',
+        }, 
+        {
+            "id": '93',
+            "type": 'together',
+            "name": "醬太郎日式燒肉",
+            "address": '台北市中山區中山北路二段6號3F',
+            "phone": '02 2536 1101',
+            "photo": 'jianbbq',
+            "region": '中山區',
+            "landing": '6576630a-246e-4eda-b6b9-b310fafe27a9',
+        }, 
+        {
+            "id": '94',
+            "type": 'fresh',
+            "name": "FB食尚曼谷",
+            "address": '台北市士林區大東路54號',
+            "phone": '02 2883 0013',
+            "photo": 'fa-ba-bistro',
+            "region": '士林區',
+            "landing": '31664160-9667-4658-ae79-683aaf1c2918',
+        }, 
+        {
+            "id": '95',
+            "type": 'fresh',
+            "name": "樂晴時尚酒吧鍋物 La Ching pot",
+            "address": '台北市中山區雙城街23之3號',
+            "phone": '02 2596 0598',
+            "photo": 'lachingpot',
+            "region": '中山區',
+            "landing": '451ec6f3-4eb2-45bb-a6f6-47a58b2325fc',
+        }, 
+        {
+            "id": '96',
+            "type": 'fresh',
+            "name": "㳸食間食堂",
+            "address": '台北市大安區溫州街18巷15-1號',
+            "phone": '02 2366 1574',
+            "photo": 'taipei0988956005',
+            "region": '大安區',
+            "landing": '35ab63d0-866f-477a-b0f1-4fde212ec9c4',
+        }, 
+        {
+            "id": '97',
+            "type": 'together',
+            "name": "撈啥鍋物",
+            "address": '臺北市中山區民生東路2段46號',
+            "phone": '02 2536 8747',
+            "photo": 'lawhotpot',
+            "region": '中山區',
+            "landing": '4d4fd631-ee48-44b9-afda-2309bb567298',
+        }, 
+        {
+            "id": '98',
+            "type": 'together',
+            "name": "愛無限共享空間",
+            "address": '臺北市中山區中山北路1段126巷12之1號',
+            "phone": '02 2523 2223',
+            "photo": 'I00SPACE',
+            "region": '中山區',
+            "landing": '2fd211f2-7606-41f2-a79d-3e416749e490',
+        }, 
+        {
+            "id": '99',
+            "type": 'together',
+            "name": "九屯咖哩",
+            "address": '台北市松山區民生東路四段56巷1弄2號',
+            "phone": '02 2715 5855',
+            "photo": 'kyutamuro',
+            "region": '松山區',
+            "landing": 'e6cc97da-11bf-42b9-8c64-98bd7f4e4cba',
+        }, 
+        {
+            "id": '100',
+            "type": 'together',
+            "name": "ED's Diner美式BBQ燒烤餐館",
+            "address": '台北市中山區樂群二路216號',
+            "phone": '02 8502 6969',
+            "photo": 'EdsDinerTaipei',
+            "region": '中山區',
+            "landing": 'e4175cdb-e101-4c29-805c-a879686f5058',
         }, 
     ]
 allStoreData = allStoreData.reverse();
@@ -933,15 +1013,16 @@ let showList = (value)=>{
         if(item.landing==''){
             landingBtn='';
         }else{
-            landingBtn = `<a class="storeCard__btn" href="https://www.foodmarco.com/restaurant/${item.landing}"><h6>看食記</h6><i class="storeCard__btn_arrow"></i></a>`
+            landingBtn = `<a class="storeCard__btn" href="https://via.placeholder.com/220x280?text=Img+23"><h6>看食記</h6><i class="storeCard__btn_arrow"></i></a>`
         }
 
-        let topString = `<div class="storeCard__top" style="background-image: url(img/p_store/store/${item.photo}.jpg);"></div>
+        let topString = `<div class="storeCard__top lazyload" data-bg="img/p_store/store/${item.photo}.jpg"></div>
         <div class="storeCard__title"><h5>${item.name}</h5><span class="storeCard__title_area">${item.region}</span><hr></div>`;
         let bottomString = `<div class="storeCard__bottom">
         <h6>${item.address}</h6><h6>${item.phone}</h6></div>${landingBtn}`
         topString+=bottomString;
         li.innerHTML = topString;
+        // let topString = `<div class="storeCard__top" style="background-image: url(img/p_store/store/${item.photo}.jpg);" class="lazy" data-bg=""></div>
 
         storeContainer.appendChild(li);
     })
@@ -957,4 +1038,14 @@ storeSelect.addEventListener('change',()=>{
 });
 
 
+document.addEventListener('lazybeforeunveil', function(e){
+    var bg = e.target.getAttribute('data-bg');
+    if(bg){
+        e.target.style.backgroundImage = 'url(' + bg + ')';
+    }
 });
+
+
+});
+
+
