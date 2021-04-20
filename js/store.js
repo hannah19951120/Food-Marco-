@@ -961,6 +961,66 @@ let allStoreData = [
             "region": '中山區',
             "landing": 'e4175cdb-e101-4c29-805c-a879686f5058',
         }, 
+        {
+            "id": '101',
+            "type": 'together',
+            "name": "Rocket Music 音樂火箭餐廳",
+            "address": '台北市中山區松江路8號',
+            "phone": '02 2567 6879',
+            "photo": 'rocketMusic',
+            "region": '中山區',
+            "landing": '662f05c5-43b1-40e9-ab52-418a93f32502',
+        }, 
+        {
+            "id": '102',
+            "type": 'together',
+            "name": "義薩格餐廳 Isaac Eatalian cuisine",
+            "address": '台北市南港區南港路一段295號',
+            "phone": '02 2783 3838',
+            "photo": 'IsaacEataliancuisine',
+            "region": '南港區',
+            "landing": '',
+        }, 
+        {
+            "id": '103',
+            "type": 'fresh',
+            "name": "Chez la mère 健康空間",
+            "address": '台北市中山區松江路204巷30號1樓',
+            "phone": '02 2522 2257',
+            "photo": 'Chezlameredetaiwan',
+            "region": '中山區',
+            "landing": '',
+        }, 
+        {
+            "id": '104',
+            "type": 'together',
+            "name": "母湯 火鍋專門店",
+            "address": '台北市大安區大安路一段31巷50號',
+            "phone": '0965 307 703',
+            "photo": 'toms_shabushabu',
+            "region": '大安區',
+            "landing": 'd07fd4cc-9bf2-4bf5-8193-17a7bf906999',
+        }, 
+        {
+            "id": '105',
+            "type": 'together',
+            "name": "擺渡屋",
+            "address": '臺北市信義區中興里信義路四段395巷6弄9號',
+            "phone": '02 2345 1700',
+            "photo": 'baiduhome',
+            "region": '信義區',
+            "landing": '71114b53-e222-43e1-a860-7a0a43d52e01',
+        },
+        {
+            "id": '106',
+            "type": 'together',
+            "name": "筠芝和牛本舖",
+            "address": '台北市士林區中山北路六段35巷42號',
+            "phone": '02 2835 3135',
+            "photo": 'junzhiWagyu',
+            "region": '士林區',
+            "landing": '',
+        }, 
     ]
 allStoreData = allStoreData.reverse();
 
@@ -1013,7 +1073,7 @@ let showList = (value)=>{
         if(item.landing==''){
             landingBtn='';
         }else{
-            landingBtn = `<a class="storeCard__btn" href="https://via.placeholder.com/220x280?text=Img+23"><h6>看食記</h6><i class="storeCard__btn_arrow"></i></a>`
+            landingBtn = `<a class="storeCard__btn" target="_blank" href="https://www.foodmarco.com/restaurant/${item.landing}"><h6>看食記</h6><i class="storeCard__btn_arrow"></i></a>`
         }
 
         let topString = `<div class="storeCard__top lazyload" data-bg="img/p_store/store/${item.photo}.jpg"></div>
