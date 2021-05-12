@@ -1396,15 +1396,6 @@ img {
   }
 }
 
-@media (max-width: 460px) {
-  .intro__coin--left {
-    display: none;
-  }
-  .intro__coin--right {
-    display: none;
-  }
-}
-
 .introDown__arrow {
   width: 72px;
   height: 72px;
@@ -1779,12 +1770,6 @@ img {
   height: 148px;
   right: -55px;
   bottom: -104px;
-}
-
-@media (max-width: 690px) {
-  .coin1000:before {
-    display: none;
-  }
 }
 
 .coin50 {

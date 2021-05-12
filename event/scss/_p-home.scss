@@ -148,10 +148,10 @@
     }
     @include rwd($w-mb) {
       &--left {
-        display: none;
+        // display: none;
       }
       &--right {
-        display: none;
+        // display: none;
       }
     }
   }
@@ -378,7 +378,7 @@
     right: -55px;
     bottom: -104px;
     @include rwd($w-table) {
-      display: none;
+      // display: none;
     }
   }
 }
