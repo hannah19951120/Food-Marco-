@@ -1,0 +1,70 @@
+/* 
+	2021.05.07
+	Layout _ 版面
+*/
+* {
+  box-sizing: border-box;
+}
+html{
+  overflow-x: hidden !important;
+}
+
+body {
+  overflow-x: hidden !important;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrap {
+  width: 90%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.wrap-fluid {
+  width: 100%;
+}
+
+.fixBtn {
+  @include df_center(row);
+  flex-wrap: nowrap;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $warning;
+  border: 6px solid $white;
+  border-bottom: 0px;
+  &__item {
+    @include df_center(row);
+    position: relative;
+    &:after {
+      content: "";
+      display: block;
+      @include size(1px, 80%);
+      position: absolute;
+      background-color: $white;
+      right: 0;
+      top: 10%;
+    }
+    &:last-child:after {
+      display: none;
+    }
+  }
+  @include rwd($w-table) {
+    width: 100%;
+    left: 0;
+    right: 0;
+    height: 65px;
+    transform: translateX(0%);
+  }
+}
+
+.calculatorBtn {
+  left: 20px;
+  bottom: 10%;
+  @include rwd($w-table) {
+    bottom: 80px;
+  }
+}

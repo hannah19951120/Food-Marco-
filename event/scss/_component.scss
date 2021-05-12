@@ -1,0 +1,269 @@
+/* 
+	2021.05.07
+	component
+*/
+
+.questionLine {
+  @include df_center();
+  li {
+    margin-right: 20px;
+  }
+  @include rwd(400px){
+    flex-direction: column;
+    li{
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.btn-question {
+  @include df_center();
+  flex-wrap: nowrap;
+  display: block;
+  padding: 8px 12px;
+  border-radius: 9px;
+}
+
+/*------------------------------------*\
+ $ICON
+\*------------------------------------*/
+.icon-question {
+  display: inline-block;
+  margin-right: 3px;
+  margin-bottom: -2px;
+  @include size(16px);
+  @include bgimg("../img/icon_question.svg");
+}
+
+.icon-downarrow {
+  display: inline-block;
+  @include size(30px, 15px);
+  @include bgimg("../img/icon_arrow.svg");
+}
+
+.icon-close {
+  display: inline-block;
+  @include size(30px, 32px);
+  @include bgimg("../img/icon_close.svg");
+  background-size: contain;
+}
+
+/*------------------------------------*\
+ $t-underline
+\*------------------------------------*/
+*[class*="t-underline"] {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  &:before {
+    content: "";
+    z-index: -1;
+    @include size(104%, 20px);
+    position: absolute;
+    bottom: 0px;
+    left: -2%;
+    border-radius: 10px;
+  }
+  @include rwd($w-mb){
+    &:before {
+      display: none;
+    }
+  }
+}
+.t-underline-yellow {
+  &:before {
+    background-color: $primary;
+  }
+}
+.t-underline-dark{
+  &:before {
+    background-color: rgba($black,0.7);
+  }
+}
+.t-underline-secondary-primary{
+  &:before {
+    background-color: rgba($primary,0.5);
+  }
+}
+.t-underline-secondary-white{
+  &:before {
+    background-color: rgba($white,0.2);
+  }
+}
+
+/*------------------------------------*\
+ $NUMBER-INPUT
+\*------------------------------------*/
+input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.number-input {
+  border: 2px solid #ddd;
+  display: inline-flex;
+}
+
+.number-input,
+.number-input * {
+  box-sizing: border-box;
+}
+
+.number-input button {
+  outline:none;
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+  margin: 0;
+  position: relative;
+}
+
+.number-input button:before,
+.number-input button:after {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  width: 12px;
+  height: 2px;
+  background-color:$primary;
+  transform: translate(-50%, -50%);
+}
+.number-input button.plus:after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.number-input input[type=number] {
+  margin:0 4px;
+  max-width: 50px;
+  border: solid #ddd;
+  border-width: 0 1px;
+  font-size: 18px;
+  height: 20px;
+  font-weight: bold;
+  text-align: center;
+  @include rwd($w-table){
+     font-size: 1rem;
+  }
+}
+
+
+/*------------------------------------*\
+ $AWARD-LINE
+\*------------------------------------*/
+.awardLine{
+  @include df_center();
+  padding: 10px 30px;
+  border-radius: 12px;
+  background-color: rgba($white,0.3);
+  &__label{
+    font-weight: $t-bold;
+    padding: 6px;
+    margin-right: 6px;
+    border-radius: 7px;
+  }
+  &--lightBg{
+    background-color: rgba($white,0.1);
+  }
+}
+
+
+/*------------------------------------*\
+ $POPUP
+\*------------------------------------*/
+.overlay{
+  z-index: 9999;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba($black,0.3);
+}
+.popup{
+  position: absolute;
+  @include size(50vw,auto);
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: $white;
+  box-shadow: 0 0 15px 0 rgba($black,0.5);
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: $white;
+  &__top{
+    @include df_center();
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 20px 30px 20px;
+    background-color: $dark;
+  }
+  &__content{
+    padding: 30px 20px 5px 20px;
+  }
+  @include rwd($w-table){
+    width: 80vw;
+  }
+  @include rwd(380px){
+    width: 95vw;
+  }
+}
+
+
+
+
+/*------------------------------------*\
+ $SWIPER
+\*------------------------------------*/
+.swiper-container{
+  @include size(100%,55vh);
+}
+.swiper-wrapper{
+  height: calc(55vh - 30px) !important;
+  .swiper-slide{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 20px !important;
+  height: 20px !important;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+  
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: $primary !important;
+    fill: $primary !important;
+    stroke: $primary !important;
+}
+
+.swiper-pagination > .swiper-pagination-bullet {
+  opacity: 1;
+  border: $primary solid 1px;
+  background-color: transparent;
+}
+.swiper-pagination > .swiper-pagination-bullet-active {
+  background-color: $primary;
+}

@@ -1,0 +1,45 @@
+/* 
+	2021.05.07
+	mixin
+*/
+
+@mixin size($w, $h: $w) {
+  width: $w;
+  height: $h;
+}
+
+@mixin df_center($dir: row) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $dir;
+  flex-wrap: wrap;
+}
+
+@mixin bgimg($url) {
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@mixin tran_Center() {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin x10_bg() {
+  background-image: url("../img/x10pattern.png");
+  background-repeat: repeat-x;
+  background-position: bottom;
+}
+
+/*------------------------------------*\
+ $RESPONSIVE
+\*------------------------------------*/
+@mixin rwd($w) {
+  @media (max-width: $w) {
+    @content;
+  }
+} ;

@@ -1,0 +1,707 @@
+/* 
+	2021.05.07
+	home _ 首頁
+*/
+
+// KV開始
+.kv {
+  @include x10_bg();
+  background-attachment: fixed;
+  .wrap {
+    overflow: hidden;
+    height: 700px;
+    position: relative;
+    @include rwd($w-mb) {
+      height: 600px;
+    }
+  }
+  &__logo {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    background-image: url("../img/hz_white.svg");
+    @include size(240px, 33px);
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  &__title {
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    & > .title {
+      z-index: 2;
+      width: 300px;
+      max-width: 300px;
+      @include tran_Center();
+    }
+    img[class^="coin"] {
+      position: absolute;
+      left: 50%;
+      width: 20%;
+    }
+    & > .coinLeft {
+      --titlewidth: calc(425px * 0.4 / 2);
+      transform: translateX(calc(-50% - var(--titlewidth) - 90%));
+    }
+    & > .coinRight {
+      --titlewidth: calc(425px * 0.4 / 2);
+      transform: translateX(calc(-50% + var(--titlewidth) + 90%));
+    }
+    @include rwd($w-mb) {
+      margin-top: 80px;
+    }
+  }
+  &__marco {
+    position: absolute;
+    @include size(100%, 350px);
+    @include bgimg("../img/kv_pcMarco.png");
+    background-size: contain;
+    background-position: bottom;
+    bottom: 0;
+    @include rwd($w-table) {
+      background-image: url("../img/kv_mbMarco.png");
+    }
+  }
+}
+
+// INTRO開始
+.intro {
+  @include x10_bg();
+  background-attachment: fixed;
+  box-shadow: inset 0 3px 16px 0 #c69700;
+  .wrap {
+    position: relative;
+  }
+  &Content {
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+    &__award {
+      width: 100%;
+      @include df_center();
+      justify-content: space-between;
+      li {
+        margin-top: 10px;
+        @include size(150px, 140px);
+        @include df_center();
+        background: rgba(255, 255, 255, 0.84);
+        box-shadow: 0 0 14px 0 #d29f00, inset 0 0 22px 6px #ffffff;
+        border-radius: 23px;
+      }
+    }
+    @include rwd($w-table) {
+      width: 90%;
+      &__award {
+        justify-content: space-around;
+        li {
+          @include size(30vw);
+        }
+      }
+    }
+  }
+  &__coin {
+    position: absolute;
+    img {
+      position: relative;
+    }
+    &--left {
+      @include size(193px, 218px);
+      top: -15px;
+      left: -10px;
+      img:nth-child(1) {
+        top: 0;
+        left: 2px;
+      }
+      img:nth-child(3) {
+        right: -5px;
+        top: -25px;
+      }
+    }
+    &--right {
+      @include size(223px, 200px);
+      right: -10px;
+      bottom: -20px;
+      img:nth-child(1) {
+        top: 55px;
+      }
+      img:nth-child(2) {
+        right: -30px;
+      }
+      img:nth-child(3) {
+        right: -60px;
+        bottom: -20px;
+      }
+      @include rwd($w-table) {
+        right: 0;
+      }
+    }
+    @include rwd($w-table) {
+      &--left {
+        transform: scale(0.8);
+        top: -40px;
+        left: -50px;
+      }
+      &--right {
+        right: -60px;
+      }
+    }
+    @include rwd($w-mb) {
+      &--left {
+        display: none;
+      }
+      &--right {
+        display: none;
+      }
+    }
+  }
+  &Down {
+    &__arrow {
+      @include size(72px);
+      @include tran_Center();
+      @include df_center();
+      background-color: $white;
+      border-radius: 50%;
+    }
+  }
+}
+
+// x10coin開始
+.x10coin {
+  &Title {
+    @include df_center(column);
+    width: 80%;
+  }
+  &Content {
+    @include x10_bg();
+    background-attachment: fixed;
+    .wrap {
+      position: relative;
+      @include df_center(column);
+      padding-top: 50px;
+      padding-bottom: 400px;
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        @include bgimg("../img/x10coin_cat.png");
+        @include size(130px, 112px);
+        left: -75px;
+        top: -112px;
+        z-index: -1;
+        @include rwd($w-mb) {
+          display: none;
+        }
+        //貓貓
+      }
+    }
+    &__title {
+      position: relative;
+      z-index: 5;
+      margin-bottom: -20px;
+      padding: 8px 20px;
+      border-radius: 6px;
+    }
+    &__list {
+      @include df_center();
+      justify-content: space-around;
+      flex-wrap: nowrap;
+      background-color: rgba($white, 0.3);
+      width: 90%;
+      padding-top: 56px;
+      padding-bottom: 40px;
+      border-radius: 20px;
+      li {
+        @include df_center();
+      }
+      &--img {
+        flex: 6;
+      }
+      &--arrow {
+        flex: 1;
+      }
+      @include rwd($w-table) {
+        flex-direction: column;
+        &--arrow {
+          flex: 2;
+          transform: rotate(90deg);
+          margin-bottom: 20px;
+        }
+      }
+    }
+    &__explanation {
+      width: 60%;
+      padding: 10px 12px;
+      background-color: rgba($white, 0.3);
+      @include rwd($w-table) {
+        width: 80%;
+      }
+    }
+  }
+}
+
+// 計算機開始
+.calculator {
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  margin-top: -400px;
+  margin-bottom: 100px;
+  width: 50%;
+  @include x10_bg();
+  @include rwd($w-table) {
+    width: 90%;
+  }
+  @include rwd($w-mb) {
+    width: 95%;
+  }
+  &Tab {
+    @include df_center();
+    justify-content: flex-start;
+    &__item {
+      padding: 10px 15px;
+      border-radius: 8px 8px 0 0;
+    }
+  }
+  &TabContent {
+    box-shadow: 0 0 14px 0 rgba($dark-primary, 0.3);
+    &__line {
+      @include df_center();
+      input {
+        width: 45px;
+      }
+    }
+    &__1000M {
+      display: inline-block;
+      padding: 10px 30px;
+      border: 1px solid #979797;
+      box-shadow: 0 0 7px 0 rgba($black, 0.4),
+        inset 0 0 22px 6px rgba($black, 0.2);
+      border-radius: 49px;
+    }
+  }
+}
+.calculation {
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 0 14px 14px 14px;
+}
+.rank {
+  border-radius: 0 14px 14px 14px;
+  p {
+    display: inline-block;
+    width: 80%;
+  }
+}
+
+#calculatorPrice {
+  max-width: 60px;
+  width: 60px;
+}
+
+// 2award開始
+.twoAward {
+  position: relative;
+  @include df_center(column);
+  &__line {
+    @include df_center();
+    align-items: flex-start;
+    justify-content: space-between;
+    @include rwd($w-table) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__container {
+    position: relative;
+    @include df_center(column);
+    padding: 30px 25px 40px 25px;
+    width: 48%;
+    background-color: $primary;
+    border-radius: 26px;
+    h2 {
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+    .awardLine {
+      margin: 10px 0;
+    }
+    @include rwd($w-table) {
+      width: 80%;
+      margin-bottom: 50px;
+    }
+    @include rwd($w-mb) {
+      width: 100%;
+    }
+  }
+  &__infinite {
+    position: absolute;
+    display: block;
+    padding: 6px 20px;
+    bottom: 0;
+    transform: translateY(50%);
+    border-radius: 10px;
+  }
+  &:after {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    bottom: -59px;
+    display: block;
+    @include size(0px);
+    border-style: solid;
+    border-width: 60px 50vw 0 50vw;
+    border-color: #ffffff transparent transparent transparent;
+  }
+}
+.x2coin,
+.coin1000 {
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+  }
+}
+.x2coin {
+  &:before {
+    background-image: url("../img/x2coin_taco.png");
+    @include size(159px, 104px);
+    left: 26px;
+    top: -104px;
+  }
+}
+.coin1000 {
+  &:before {
+    background-image: url("../img/1000coin_orange.png");
+    @include size(155px, 148px);
+    right: -55px;
+    bottom: -104px;
+    @include rwd($w-table) {
+      display: none;
+    }
+  }
+}
+
+// coin50開始
+.coin50 {
+  overflow: hidden;
+  position: relative;
+  .wrap {
+    position: relative;
+    padding-top: 120px;
+    padding-bottom: 130px;
+    @include df_center(column);
+    &:after,
+    &:before {
+      content: "";
+      position: absolute;
+      display: block;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      bottom: 0;
+    }
+    &:before {
+      background-image: url("../img/50icon_left.png");
+      @include size(233px, 151px);
+      left: 0;
+    }
+    &:after {
+      background-image: url("../img/50icon_right.png");
+      @include size(393px, 172px);
+      right: 0;
+    }
+    @include rwd($w-table) {
+      &:after,
+      &:before {
+        transform: scale(0.8);
+      }
+      &:before {
+        left: -60px;
+        transform-origin: bottom left;
+      }
+      &:after {
+        right: -60px;
+        transform-origin: bottom right;
+      }
+    }
+  }
+  &__title {
+    position: relative;
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      display: block;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &:before {
+      background-image: url("../img/kv_leftCoin.png");
+      @include size(113px, 123px);
+      left: -125px;
+    }
+    &:after {
+      background-image: url("../img/kv_rightCoin.png");
+      @include size(165px, 133px);
+      right: -175px;
+    }
+    @include rwd($w-mb) {
+      &:after,
+      &:before {
+        display: none;
+      }
+    }
+  }
+  .awardLine {
+    display: inline-flex;
+  }
+}
+
+// store開始
+.store {
+  padding: 84px 0;
+  @include x10_bg();
+  background-attachment: fixed;
+  box-shadow: inset 0 3px 16px 0 #c69700;
+  .wrap {
+    @include df_center(column);
+  }
+  &__select {
+    z-index: 1;
+    position: relative;
+    padding: 10px;
+    width: 30%;
+    font-size: 18px;
+    box-shadow: 0 0 23px 0 rgba(183, 139, 0, 0.5);
+    border-radius: 8px;
+    border: 0;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: url("../img/selectArrow.svg") no-repeat right center transparent;
+    background-position: 95% center;
+    background-color: $white;
+    @include rwd($w-table) {
+      width: 70%;
+    }
+  }
+}
+
+.storeList {
+  width: 100%;
+  position: relative;
+  @include df_center();
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0 -2%;
+  margin-top: -20px;
+  padding: 60px 25px 0px 25px;
+  height: 800px;
+  border-radius: 18px;
+  overflow-y: scroll;
+  @include rwd($w-table) {
+    height: 70vh;
+  }
+}
+.storeCard {
+  overflow: hidden;
+  position: relative;
+  @include size(22%, auto);
+  min-height: 415px;
+  margin: 0 1.5%;
+  margin-bottom: 35px;
+  background-color: $white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(151, 151, 151, 0.3);
+  border-bottom: 13px solid $primary;
+  &__top {
+    position: relative;
+    height: 210px;
+    background-color: $light;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &__title {
+    position: relative;
+    padding: 10px 15px 0 15px;
+    h5 {
+      font-weight: $t-bold;
+      text-align: left;
+    }
+    &_area {
+      display: block;
+      padding: 2px 12px;
+      position: absolute;
+      left: 0;
+      top: -16px;
+      background-color: $secondary-primary;
+      color: $dark-primary;
+    }
+  }
+  &__bottom {
+    padding: 0 15px;
+    h6 {
+      color: $muted;
+    }
+  }
+  &__btn {
+    position: relative;
+    margin-right: 15px;
+    padding: 3px 0;
+    @include df_center();
+    width: 85px;
+    right: calc(-95% + 85px);
+    bottom: 0px;
+    border: 1px solid $primary;
+    background-color: $white;
+    h6 {
+      color: $primary;
+      transition: all 0.4s;
+    }
+    &_arrow {
+      display: block;
+      @include size(18px, 8px);
+      @include bgimg("../img/storeArrow-yellow.svg");
+    }
+    &:hover {
+      background-color: $primary;
+      h6 {
+        color: $white;
+      }
+      .storeCard__btn_arrow {
+        @include bgimg("../img/storeArrow-white.svg");
+      }
+    }
+  }
+
+  // pad樣式
+  @include rwd($w-pad) {
+    width: 30%;
+  }
+
+  @include rwd($w-table) {
+    padding: 10px 0 8px 0;
+    margin-bottom: 0;
+    @include df_center(row);
+    justify-content: space-between;
+    background-color: Transparent;
+    box-shadow: 0 0 0 0 rgba($white, 0);
+    border-radius: 0;
+    border-bottom: 0px;
+    //清除原本樣式
+    @include size(100%, auto);
+    min-height: auto;
+    border-bottom: 1px solid $muted;
+    &:last-child {
+      border-bottom: 0px solid Transparent;
+    }
+    &__top {
+      @include size(35%, 68px);
+      border-radius: 6px;
+    }
+
+    &__title {
+      // position: relative;
+      // padding: 10px 15px 0 15px;
+      @include df_center(column);
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 65%;
+      hr {
+        display: none;
+      }
+      &_area {
+        border-radius: 14px;
+        position: static;
+        background-color: $primary;
+        color: $white;
+      }
+    }
+    &__bottom {
+      padding: 0;
+    }
+
+    &__btn {
+      right: auto;
+    }
+  }
+}
+
+// specification開始
+.specification {
+  padding-top: 80px;
+  padding-bottom: 240px;
+  .wrap {
+    @include df_center(column);
+  }
+  &__list {
+    width: 80%;
+    list-style-type: decimal;
+    line-height: 1.5;
+  }
+}
+
+// 立即下載開始
+.download {
+  margin-top: -160px;
+  @include df_center();
+  a {
+    display: block;
+    transition: all 0.4s ease-out;
+    img {
+      box-shadow: 0 5px 16px 0 #fcdf81;
+      border-radius: 14px;
+      transition: all 0.4s ease-out;
+    }
+    &:hover {
+      transform: translateY(-10px);
+      img {
+        box-shadow: 0 10px 20px 0 #fcdf81;
+      }
+    }
+  }
+}
+
+// notice開始
+.notice {
+  padding-top: 100px;
+  padding-bottom: 60px;
+  &__list {
+    margin: 0 auto;
+    width: 80%;
+    list-style-type: decimal;
+    line-height: 1.5;
+  }
+}
+
+// POPUP視窗
+
+.approbate {
+  &1 {
+    background-image: url("../img/pop_agree1.png");
+  }
+  &2 {
+    background-image: url("../img/pop_agree2.png");
+  }
+  &3 {
+    background-image: url("../img/pop_agree3.png");
+  }
+}
+
+.howPay {
+  &1 {
+    background-image: url("../img/pop_pay1.png");
+  }
+  &2 {
+    background-image: url("../img/pop_pay2.png");
+  }
+  &3 {
+    background-image: url("../img/pop_pay3.png");
+  }
+}
