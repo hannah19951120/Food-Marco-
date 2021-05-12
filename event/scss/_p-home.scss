@@ -147,11 +147,8 @@
       }
     }
     @include rwd($w-mb) {
-      &--left {
-        // display: none;
-      }
       &--right {
-        bottom: -100px;
+        bottom: -80px;
       }
     }
   }
