@@ -1396,6 +1396,12 @@ img {
   }
 }
 
+@media (max-width: 460px) {
+  .intro__coin--right {
+    bottom: -100px;
+  }
+}
+
 .introDown__arrow {
   width: 72px;
   height: 72px;
